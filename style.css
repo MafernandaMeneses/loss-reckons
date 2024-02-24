@@ -244,6 +244,7 @@ span {
 .contenedor1-parrafo p {
     text-align: center;
     color: var(--bg-titulos);
+}
 
 
 .contenedor-IAQ {
@@ -301,7 +302,7 @@ span {
     -webkit-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
     -moz-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
     box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-=======
+}
 .contedor-IAQ2{
     width: 90%;
     height: 70%;
@@ -446,17 +447,12 @@ span {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.1em;
-}
-=======
-    letter-spacing: 1px;
+    font-size: 1.1em;letter-spacing: 1px;
     text-indent: 20px;
     padding: 2% 0;
     margin-bottom: 2%;
-    color: #ffffff;
-  
-    
-}
+    color: #ffffff;  }
+
 
 
 /* Sebas  */
