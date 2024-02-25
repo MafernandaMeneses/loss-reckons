@@ -14,6 +14,15 @@
     --color-oscuro: #063254;
 }
 
+
+body{
+    background-image: url(imgs/background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .contedor-principal {
     width: 100%;
     height: 100vh;
@@ -484,9 +493,9 @@ span {
     width: 100%;
     height: 100vh;
     overflow: clip;
-    background-image: url(imgs/background-img.jpg);
+    /* background-image: url(imgs/background-img.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
 }
 
 .Sect-slider img {
