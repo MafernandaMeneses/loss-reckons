@@ -309,7 +309,7 @@ span {
     align-items: center;
     justify-content: center;
     gap: 2.5em;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .contenedor-internoIAQ {
@@ -350,11 +350,10 @@ span {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5vw;
-    text-align: left;
+    font-size: 1.7vw;
+    text-align: justify;
     letter-spacing: 1px;
-    line-height: 2vw;
-    text-align: left;
+    line-height: 2.2vw;
 }
 
 .tarjetas-IAQ {
@@ -645,17 +644,16 @@ h3 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-
 }
 
 p,
 a,
-span{
+span {
     font-family: "lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 
@@ -666,7 +664,7 @@ span{
     width: 100%;
     height: 100vh;
     overflow: clip;
-    margin-top: 3%;
+    margin-top: 2%;
     /* background-image: url(imgs/background-img.jpg);
     background-repeat: no-repeat;
     background-position: center; */
@@ -699,21 +697,21 @@ span{
 }
 
 .Services-tl h1 {
-    font-size: 3.3vw;
+    font-size: 3vw;
     color: var(--bg-titulos);
     z-index: inherit;
-    font-size: 3em;
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
-.services-span {
+.Services-tl span {
     color: var(--color-sub-titulo);
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 3vw;
     letter-spacing: 1px;
 }
 
@@ -867,9 +865,10 @@ span{
     top: 50%;
 }
 
+
 /* Slider clientes contentos */
 
-.Slider2-cont{
+.Slider2-cont {
     position: absolute;
     overflow: clip;
     top: 50%;
@@ -878,14 +877,14 @@ span{
     width: 80%;
     min-width: 450px;
     height: 80%;
-    
 }
+
 .Slider2-cont .Slider2 .Clients {
     min-width: 250px;
-    max-height: 500px;    
+    max-height: 500px;
     position: absolute;
     top: 50%;
-    transform: translate( 0%, 30%);    
+    transform: translate( 0%, 30%);
     display: inline-block;
     transition: 1s;
 }
@@ -897,8 +896,8 @@ span{
     width: 40%;
     height: 100%;
     opacity: 0;
-    
 }
+
 .Slider2 .Clients:nth-child(2) {
     top: 0;
     left: 0;
@@ -912,7 +911,7 @@ span{
     left: 0;
     transform: translate(75%, 30%);
     width: 40%;
-    height: 100%;    
+    height: 100%;
 }
 
 .Slider2 .Clients:nth-child(4) {
@@ -920,7 +919,7 @@ span{
     left: 0;
     transform: translate(150%, 30%);
     width: 40%;
-    height: 100%;    
+    height: 100%;
 }
 
 .Slider2 .Clients:nth-child(5) {
@@ -932,7 +931,7 @@ span{
     opacity: 0;
 }
 
-.Slider2 .Clients:nth-child(n + 6) {
+.Slider2 .Clients:nth-child(n+6) {
     top: 0;
     left: 0;
     transform: translate(300%, 30%);
@@ -940,37 +939,34 @@ span{
     height: 100%;
 }
 
-
 .Slider2 .Clients .Client-pic {
     position: absolute;
     top: -20%;
-    left: 50%;   
+    left: 50%;
     padding: 10px;
     transform: translate(0, -60%);
-    
-}
-.Client-pic img{
-    width: 100%;
-    height: 100%;
-    min-width: 120px;    
-    object-fit: cover;
-    border-radius: 45px 25px 25px 5px;
-    
 }
 
+.Client-pic img {
+    width: 100%;
+    height: 100%;
+    min-width: 120px;
+    object-fit: cover;
+    border-radius: 45px 25px 25px 5px;
+}
 
 .Clients .Client-content {
     position: absolute;
-    top: 50%;    
+    top: 50%;
     left: 100px;
     min-width: 200px;
     width: 60%;
     height: 70%;
     background-color: #dde7ee73;
-    border-radius: 45px 5px 45px 25px ;
+    border-radius: 45px 5px 45px 25px;
     backdrop-filter: blur(1px);
     padding: 10px;
-    transform: translate(0,-30%);
+    transform: translate(0, -30%);
     display: none;
 }
 
@@ -978,8 +974,7 @@ span{
 .Slider2 .Clients:nth-child(2) .Client-content,
 .Slider2 .Clients:nth-child(3) .Client-content,
 .Slider2 .Clients:nth-child(4) .Client-content,
-.Slider2 .Clients:nth-child(5) .Client-content
-{
+.Slider2 .Clients:nth-child(5) .Client-content {
     display: block;
     padding: 4%;
 }
@@ -1004,140 +999,159 @@ span{
     animation: Appear .3s ease-in 0.3s 1 forwards;
 }
 
+
 /* Contenedor de moho */
 
-.Cont-moho{
+.Cont-moho {
     width: 100%;
-
     height: auto;
     display: flex;
     justify-content: center;
     margin: 2% 0%;
+    margin-top: 4%;
 }
 
-.Sect-moho{
+.Sect-moho {
     width: 80%;
 }
 
-.Sect-moho h1{
+.Sect-moho h1 {
     width: 80%;
-    font-size: 2.8vw;
+    font-size: 3vw;
+    font-weight: 600;
     color: var(--bg-titulos);
+    letter-spacing: 1px;
 }
 
-.Sect-moho h1 span{
+.Sect-moho h1 span {
     width: 80%;
     font-size: 2.8vw;
     color: var(--color-sub-titulo);
+    letter-spacing: 1px;
 }
-.Art-moho-1{
+
+.Art-moho-1 {
     display: flex;
+    align-items: center;
+    gap: 5%;
     width: 100%;
 }
-.Art-moho-img{
+
+.Art-moho-img {
     width: 90%;
 }
 
-.Art-moho-img img{
-    margin-left:10% ;    
+.Art-moho-img img {
+    /* margin-left: 10%; */
     width: 90%;
     border-radius: 45px 25px 45px 5px;
     box-shadow: 10px 10px 10px -14px rgba(0, 0, 0, 0.78);
-    
-    
 }
+
 .Dv-moho-1 {
     width: 88%;
-    padding: 1% 0%; 
+    /* padding: 1% 0%; */
 }
 
 .Dv-moho-1 .P-moho {
-    width: 80% ;
+    width: 80%;
 }
 
-.Dv-moho-2{
+.Dv-moho-2 {
     width: 100%;
-    
-}
-.Dv-moho-2 h2{
-    font-size: 1.8vw;
-    color: var(--bg-titulos);
-    font-weight: 500;
 }
 
-.Dv-moho-2 h2 span{
-    font-size: 1.8vw;
-    color: var(--color-sub-titulo);
-    font-weight: 500;
-}
-.P-moho{
-    font-size: 1.3vw;
+.Dv-moho-2 h2 {
+    font-size: 1.9vw;
+    color: var(--bg-titulos);
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height:1.5em;
+}
+
+.Dv-moho-2 h2 span {
+    font-size: 1.9vw;
+    color: var(--color-sub-titulo);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.P-moho {
+    font-size: 1.7vw;
+    letter-spacing: 1px;
+    line-height: 1.4em;
     text-align: justify;
     margin: 1em 0px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
-.P-moho span{    
+.P-moho span {
     color: #ffff;
     background-color: var(--color-oscuro);
     border-radius: 50px;
     width: 1.5em;
     padding: 1% 2%;
-    margin-right:15px;
+    margin-right: 15px;
     font-size: inherit;
 }
 
-.Cont-serv-clt{
+.Cont-serv-clt {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     width: 100%;
-    margin: 3% 0;
+    margin-top: 4%;
+    /* margin: 3% 0; */
 }
 
-.Sect-serv-clt{
+.Sect-serv-clt {
     width: 80%;
     display: flex;
 }
-.Sect-serv-clt img{
-    width: 45%;
+
+.Sect-serv-clt img {
+    width: 40%;
     border-radius: 45px 5px 45px 25px;
     box-shadow: 10px 10px 10px -14px rgba(0, 0, 0, 0.78);
-    margin-right: 50px ;
+    margin-right: 50px;
 }
 
-.Art-serv-clt{
+.Art-serv-clt {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 60%;
 }
 
-.Art-serv-clt-tl{
-    font-size: 2.4vw;
-    margin-bottom: 3%;
+.Art-serv-clt-tl {
+    font-size: 3vw;
+    font-weight: 600;
+    letter-spacing: 1px;
     color: var(--bg-titulos);
 }
-.Art-serv-clt-tl span{
-    font-size: 2.4vw;
-    font-weight: bold;
-    margin-bottom: 3%;
+
+.Art-serv-clt-tl span {
+    font-size: 3vw;
+    font-weight: 600;
+    letter-spacing: 1px;
     color: var(--color-sub-titulo);
 }
-.Art-serv-clt-p{
-    font-size: 1.3vw;
+
+.Art-serv-clt-p {
+    width: 100%;
+    font-size: 1.7vw;
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height:1.5em;
+    line-height: 1.5em;
     text-align: justify;
+    margin-top: 3%;
 }
 
-.Art-serv-clt-p span{
+.Art-serv-clt-p span {
     color: #ffff;
     background-color: var(--color-oscuro);
-
     border-radius: 50px;
     width: 1.5em;
     padding: 1% 2%;
-    margin-right:15px;
+    margin-right: 15px;
     font-size: inherit;
 }
 
@@ -1166,7 +1180,7 @@ span{
 }
 
 .contenedor3-texto {
-    width: 50%;
+    width: 52%;
     height: 65%;
     display: flex;
     align-items: center;
@@ -1185,7 +1199,8 @@ span{
     font-size: 2em;
     font-family: "Lato", sans-serif;
     font-weight: 900;
-    font-style: normal
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
 .contenedor3-texto p {
@@ -1195,6 +1210,7 @@ span{
     font-size: 1.4em;
     color: black;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .boton-contenedor3 {
@@ -1247,7 +1263,7 @@ span{
 .funcionamiento-servicio {
     width: 100%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .contendor-funcionamiento {
@@ -1272,6 +1288,7 @@ span{
     font-weight: 600;
     font-style: normal;
     font-size: 3vw;
+    letter-spacing: 1px;
     color: var(--bg-titulos);
 }
 
@@ -1281,6 +1298,7 @@ span{
     font-style: normal;
     font-size: 3vw;
     color: var(--color-sub-titulo);
+    letter-spacing: 1px;
 }
 
 .subtitulo-funcionamiento h4 {
@@ -1289,7 +1307,7 @@ span{
     font-style: normal;
     font-size: 1.8vw;
     color: black;
-    line-height: 40px;
+    line-height: 1.5em;
     letter-spacing: 1px;
     text-align: left;
 }
@@ -1376,7 +1394,7 @@ span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -1384,7 +1402,7 @@ span{
 }
 
 .parallax2-texto {
-    width: 35%;
+    width: 38%;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -1399,10 +1417,10 @@ span{
 
 .parallax2-texto h1 {
     color: var(--bg-titulos);
-    font-size: 2.5vw;
+    font-size: 3vw;
     letter-spacing: 1px;
     font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal
 }
 
@@ -1418,7 +1436,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 3.5em;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .Contactos {
@@ -1449,15 +1467,15 @@ span{
 }
 
 .seccion-contactos img {
-    width: 2.5em;
+    width: 2.8em;
 }
 
 .seccion-contactos h4 {
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 1.2vw;
+    font-weight: 400;
+    font-size: 1.6vw;
     color: var(--bg-titulos);
 }
 
@@ -1467,7 +1485,7 @@ span{
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     color: grey;
 }
 
@@ -1476,7 +1494,7 @@ span{
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: grey;
 }
 
@@ -1484,8 +1502,9 @@ span{
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3vw;
+    letter-spacing: 1px;
     color: var(--bg-titulos);
 }
 
@@ -1493,8 +1512,9 @@ span{
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3vw;
+    letter-spacing: 1px;
     color: var(--color-sub-titulo);
 }
 
@@ -1509,7 +1529,7 @@ span{
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .container-beneficios {
@@ -1572,7 +1592,7 @@ span{
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3vw;
     color: var(--bg-titulos);
     padding: 2% 2%;
@@ -1583,7 +1603,7 @@ span{
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3vw;
     color: var(--color-sub-titulo);
 }
