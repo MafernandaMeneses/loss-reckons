@@ -641,20 +641,21 @@ span {
 h1,
 h2,
 h3 {
-    font-family: "Playfair Display", serif;
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
+
 }
 
 p,
 a,
-span {
-    font-family: "Roboto Condensed", sans-serif;
+span{
+    font-family: "lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 
@@ -698,6 +699,7 @@ span {
 }
 
 .Services-tl h1 {
+    font-size: 3.3vw;
     color: var(--bg-titulos);
     z-index: inherit;
     font-size: 3em;
@@ -720,9 +722,9 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 70%;
     min-width: 400px;
-    height: 60%;
+    height: 65%;
     min-height: 300px;
     background: rgb(233, 231, 231);
     box-shadow: 0 15px 30px #dbdbdb;
@@ -765,8 +767,8 @@ span {
     position: absolute;
     top: 50%;
     left: 100px;
-    min-width: 200px;
-    width: 320px;
+    min-width: 300px;
+    width: 30%;
     background-color: #dde7ee73;
     backdrop-filter: blur(1px);
     padding: 10px;
@@ -776,10 +778,12 @@ span {
 
 .Slider .Services:nth-child(2) .Serv-content {
     display: block;
+    font-weight: bold;
+    z-index: 10;
 }
 
 .Serv-content .Serv-name {
-    font-size: 2.5em;
+    font-size: 2vw;
     color: var(--color-titulo);
     text-transform: uppercase;
     font-weight: bold;
@@ -789,13 +793,17 @@ span {
 
 .Serv-content .Serv-desc {
     color: var();
+    font-size: 1.2vw;
     margin: 10px 0 20px 0;
+    letter-spacing: 1px;
+    line-height: 1.4em;
     opacity: 0;
     animation: Appear .3s ease-in 0.3s 1 forwards;
 }
 
 .Serv-content .Serv-btn {
     display: inline-block;
+    font-size: 1vw;
     padding: 15px 25px;
     background-color: var(--color-oscuro);
     text-decoration: none;
@@ -859,89 +867,279 @@ span {
     top: 50%;
 }
 
+/* Slider clientes contentos */
 
-/* Contact section */
-
-
-/* .Contact-top {
-    width: 100%;
-    height: 150px;
-    z-index: 98;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5em;
+.Slider2-cont{
+    position: absolute;
+    overflow: clip;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    min-width: 450px;
+    height: 80%;
+    
+}
+.Slider2-cont .Slider2 .Clients {
+    min-width: 250px;
+    max-height: 500px;    
+    position: absolute;
+    top: 50%;
+    transform: translate( 0%, 30%);    
+    display: inline-block;
+    transition: 1s;
 }
 
-.Contact {
-    width: 70%;
-    display: flex;
-    z-index: 99;
+.Slider2 .Clients:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform: translate(-75%, 30%);
+    width: 40%;
+    height: 100%;
+    opacity: 0;
+    
 }
-
-.Map-cont {
-    width: 50%;
-    height: 50vh;
-}
-
-.Map-cont iframe {
-    z-index: 100;
-    width: 100%;
+.Slider2 .Clients:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0%, 30%);
+    width: 40%;
     height: 100%;
 }
 
-.Contact-lat {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #b8bdcc56;
-    backdrop-filter: blur(10px);
+.Slider2 .Clients:nth-child(3) {
+    top: 0;
+    left: 0;
+    transform: translate(75%, 30%);
+    width: 40%;
+    height: 100%;    
 }
 
-.Contact-lat-inner {
+.Slider2 .Clients:nth-child(4) {
+    top: 0;
+    left: 0;
+    transform: translate(150%, 30%);
+    width: 40%;
+    height: 100%;    
+}
+
+.Slider2 .Clients:nth-child(5) {
+    top: 0;
+    left: 0;
+    transform: translate(230%, 30%);
+    width: 40%;
+    height: 100%;
+    opacity: 0;
+}
+
+.Slider2 .Clients:nth-child(n + 6) {
+    top: 0;
+    left: 0;
+    transform: translate(300%, 30%);
+    width: 40%;
+    height: 100%;
+}
+
+
+.Slider2 .Clients .Client-pic {
+    position: absolute;
+    top: -20%;
+    left: 50%;   
+    padding: 10px;
+    transform: translate(0, -60%);
+    
+}
+.Client-pic img{
+    width: 100%;
+    height: 100%;
+    min-width: 120px;    
+    object-fit: cover;
+    border-radius: 45px 25px 25px 5px;
+    
+}
+
+
+.Clients .Client-content {
+    position: absolute;
+    top: 50%;    
+    left: 100px;
+    min-width: 200px;
     width: 60%;
-    height: 100%;
-    display: grid;
-    place-content: center;
-    padding: 15px;
-    gap: 15px;
+    height: 70%;
+    background-color: #dde7ee73;
+    border-radius: 45px 5px 45px 25px ;
+    backdrop-filter: blur(1px);
+    padding: 10px;
+    transform: translate(0,-30%);
+    display: none;
 }
 
-.Contact-lat-inner-blocks {
-    display: flex;
-    gap: 5px;
+.Slider2 .Clients:nth-child(1) .Client-content,
+.Slider2 .Clients:nth-child(2) .Client-content,
+.Slider2 .Clients:nth-child(3) .Client-content,
+.Slider2 .Clients:nth-child(4) .Client-content,
+.Slider2 .Clients:nth-child(5) .Client-content
+{
+    display: block;
+    padding: 4%;
 }
 
-.Contact-lat-inner-blocks div {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+.Client-content .Client-name {
+    font-size: 2vw;
+    text-align: center;
+    color: var(--bg-titulos);
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: Appear .3s ease-in .1s 1 forwards;
 }
 
-.Contact-lat-inner-blocks h2 {
-    font-size: 26px;
+.Client-content .Client-desc {
+    margin: 10px 0 0 0;
+    text-align: justify;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    opacity: 0;
+    animation: Appear .3s ease-in 0.3s 1 forwards;
 }
 
-.Contact-lat-inner-blocks a {
-    color: var(--color-titulo);
-}
+/* Contenedor de moho */
 
-.Contact-lat-inner-blocks i {
-    font-size: 2.5em;
+.Cont-moho{
+    width: 100%;
+
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 45px;
+    margin: 2% 0%;
 }
 
-.Contact-lat-inner span {
-    background-color: var(--color-oscuro);
-    display: block;
+.Sect-moho{
+    width: 80%;
+}
+
+.Sect-moho h1{
+    width: 80%;
+    font-size: 2.8vw;
+    color: var(--bg-titulos);
+}
+
+.Sect-moho h1 span{
+    width: 80%;
+    font-size: 2.8vw;
+    color: var(--color-sub-titulo);
+}
+.Art-moho-1{
+    display: flex;
     width: 100%;
-    height: 2px;
-} */
+}
+.Art-moho-img{
+    width: 90%;
+}
+
+.Art-moho-img img{
+    margin-left:10% ;    
+    width: 90%;
+    border-radius: 45px 25px 45px 5px;
+    box-shadow: 10px 10px 10px -14px rgba(0, 0, 0, 0.78);
+    
+    
+}
+.Dv-moho-1 {
+    width: 88%;
+    padding: 1% 0%; 
+}
+
+.Dv-moho-1 .P-moho {
+    width: 80% ;
+}
+
+.Dv-moho-2{
+    width: 100%;
+    
+}
+.Dv-moho-2 h2{
+    font-size: 1.8vw;
+    color: var(--bg-titulos);
+    font-weight: 500;
+}
+
+.Dv-moho-2 h2 span{
+    font-size: 1.8vw;
+    color: var(--color-sub-titulo);
+    font-weight: 500;
+}
+.P-moho{
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    line-height:1.5em;
+    text-align: justify;
+    margin: 1em 0px;
+}
+
+.P-moho span{    
+    color: #ffff;
+    background-color: var(--color-oscuro);
+    border-radius: 50px;
+    width: 1.5em;
+    padding: 1% 2%;
+    margin-right:15px;
+    font-size: inherit;
+}
+
+.Cont-serv-clt{
+    display: flex;
+    justify-content: center ;
+    width: 100%;
+    margin: 3% 0;
+}
+
+.Sect-serv-clt{
+    width: 80%;
+    display: flex;
+}
+.Sect-serv-clt img{
+    width: 45%;
+    border-radius: 45px 5px 45px 25px;
+    box-shadow: 10px 10px 10px -14px rgba(0, 0, 0, 0.78);
+    margin-right: 50px ;
+}
+
+.Art-serv-clt{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.Art-serv-clt-tl{
+    font-size: 2.4vw;
+    margin-bottom: 3%;
+    color: var(--bg-titulos);
+}
+.Art-serv-clt-tl span{
+    font-size: 2.4vw;
+    font-weight: bold;
+    margin-bottom: 3%;
+    color: var(--color-sub-titulo);
+}
+.Art-serv-clt-p{
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    line-height:1.5em;
+    text-align: justify;
+}
+
+.Art-serv-clt-p span{
+    color: #ffff;
+    background-color: var(--color-oscuro);
+
+    border-radius: 50px;
+    width: 1.5em;
+    padding: 1% 2%;
+    margin-right:15px;
+    font-size: inherit;
+}
 
 
 /* contenedor3-imagen */
