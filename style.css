@@ -1,27 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Roboto+Condensed:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,500;1,500&family=Roboto+Condensed:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
 }
 
-:root {
+
+/* fuente para h1, span{
+          box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+          font-weight: 600;
+        }
+    fuente p{
+          box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+          font-weight: 400;
+        }
+    
+         */
+
+ :root {
     --bg-titulos: #042469;
     --color-titulo: #0010b3;
     --color-sub-titulo: #0cbccc;
     --color-oscuro: #063254;
 }
 
-
-body{
+body {
+    width: 100%;
     background-image: url(imgs/background-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
 
 .contedor-principal {
     width: 100%;
@@ -47,8 +62,16 @@ body{
     border: 1px solid rgba( 255, 255, 255, 0.18);
 }
 
+.enlaces-navegador a {
+    color: var(--bg-titulos);
+    font-size: 1.4em;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .logo-empresa img {
-    width: 220px;
+    width: 14em;
 }
 
 .contedor-lenguaje {
@@ -77,13 +100,13 @@ body{
 }
 
 .texto-lenguaje p {
+    border: 1px solid red;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.1em;
     padding: 0 5px;
     color: var(--color-titulo);
     cursor: pointer;
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -108,10 +131,10 @@ body{
 .login a {
     text-decoration: none;
     color: var(--bg-titulos);
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.1em;
 }
 
 .login a:hover {
@@ -136,11 +159,10 @@ ul li a {
     color: black;
     text-decoration: none;
     text-align: center;
-    font-size: 22px;
+    font-size: 1.2em;
     letter-spacing: 1px;
     color: var(--bg-titulos);
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -160,6 +182,9 @@ ul li ul.dropdown {
 
 ul li a:hover {
     color: #0cbccc;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 ul li .dropdown li a:hover {
@@ -180,11 +205,10 @@ ul li:hover ul.dropdown {
 
 .titulo-contenedor1 h1,
 span {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
+    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 50px;
+    font-size: 3.2em;
     text-align: center;
 }
 
@@ -194,7 +218,11 @@ span {
 
 .titulo-contenedor1 span {
     color: var(--color-sub-titulo);
-    font-size: 60px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+    letter-spacing: 1px;
 }
 
 .boton-contenedor1 {
@@ -202,6 +230,9 @@ span {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #boton1-contenedor1>a {
@@ -211,13 +242,12 @@ span {
 #boton1-contenedor1:hover a {
     background: white;
     color: var(--color-oscuro);
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
-    font-style: normal;
-    font-size: 15px;
+    font-size: 0.9em;
+    text-decoration: none;
 }
 
 .boton-contenedor1 a {
@@ -225,22 +255,20 @@ span {
     background-color: var(--color-oscuro);
     text-decoration: none;
     text-align: center;
-    padding: 12px 2px;
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
+    padding: 5% 5%;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
-    font-style: normal;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 0.9em;
 }
 
 .contenedor1-parrafo {
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -251,6 +279,10 @@ span {
 .contenedor1-parrafo p {
     text-align: center;
     color: var(--bg-titulos);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
 }
 
 .contenedor-IAQ {
@@ -259,6 +291,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 12em;
     /* background-image: url(./recursos/9218023_83.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -291,13 +324,14 @@ span {
 
 .primer-parrafoIAQ p {
     text-align: right;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 200;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 1.2em;
+    text-decoration: none;
+    font-size: 1.3em;
     text-align: justify;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 1.5em;
     text-indent: 20px;
     color: black;
     background: rgba( 255, 255, 255, 0.2);
@@ -305,9 +339,9 @@ span {
     backdrop-filter: blur( 4px);
     -webkit-backdrop-filter: blur( 4px);
     padding: 2% 3% 2% 3%;
-    -webkit-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    -moz-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
+    box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
 }
 
 .contedor-IAQ2 {
@@ -325,13 +359,15 @@ span {
 .Segundo-parrafoIAQ p {
     text-align: right;
     width: 100%;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 200;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1.3em;
     text-align: justify;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 1.5em;
     text-indent: 20px;
     color: black;
     background: rgba( 255, 255, 255, 0.2);
@@ -339,9 +375,9 @@ span {
     backdrop-filter: blur( 4px);
     -webkit-backdrop-filter: blur( 4px);
     padding: 2% 3% 2% 3%;
-    -webkit-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    -moz-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
+    box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
 }
 
 .texto-IAQ p {
@@ -354,15 +390,17 @@ span {
     justify-content: end;
 }
 
-.tercer-parrafoIAQ h4 {
+.tercer-parrafoIAQ p {
     width: 75%;
     text-align: right;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 200;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.3em;
+    font-style: normal;
+    text-align: justify;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 1.5em;
     text-indent: 20px;
     color: black;
     background: rgba( 255, 255, 255, 0.2);
@@ -370,9 +408,9 @@ span {
     backdrop-filter: blur( 4px);
     -webkit-backdrop-filter: blur( 4px);
     /* padding: 2% 3% 2% 3%; */
-    -webkit-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    -moz-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
+    box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.28);
 }
 
 .img-IAQ {
@@ -392,7 +430,7 @@ span {
 .border-IAQ {
     width: 100%;
     height: 50vh;
-    border: 5px solid var(--color-sub-titulo);
+    border: 2px solid var(--color-sub-titulo);
     z-index: -1000;
     position: relative;
 }
@@ -402,20 +440,20 @@ span {
     height: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .imagen-titulo {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 10em;
 }
 
 .img2-IAQ {
-    width: 70%;
+    width: 60%;
     position: absolute;
     bottom: -5%;
-    left: 80%;
+    left: 70%;
     z-index: 20;
 }
 
@@ -437,27 +475,24 @@ span {
 }
 
 .titulo-IAQ h1 {
-    color: #ffffff;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
+    color: var(--bg-titulos);
+    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.8em;
+    font-size: 2.3vw;
     text-align: center;
 }
 
 .span-IAQ {
     color: var(--color-sub-titulo);
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
+    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.1em;
+    font-size: 2.3vw;
     letter-spacing: 1px;
     text-indent: 20px;
     padding: 2% 0;
     margin-bottom: 2%;
-    color: #ffffff;
 }
 
 
@@ -507,8 +542,21 @@ span{
 
 .Services-tl h1 {
     font-size: 3.3vw;
-    color: var(--color-titulo);
+    color: var(--bg-titulos);
     z-index: inherit;
+    font-size: 3em;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.services-span {
+    color: var(--color-sub-titulo);
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 1px;
 }
 
 .Slider-cont {
@@ -908,9 +956,512 @@ span{
 .Art-serv-clt-p span{
     color: #ffff;
     background-color: var(--color-oscuro);
+
     border-radius: 50px;
     width: 1.5em;
     padding: 1% 2%;
     margin-right:15px;
     font-size: inherit;
+}
+
+
+/* contenedor3-imagen */
+
+.contenedor3-imagen {
+    width: 100%;
+    height: 50vh;
+    background-image: url(./recursos/03_12_19_001_interior.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 12em;
+    filter: contrast(150%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.contedor3-titulo {
+    width: 100%;
+    height: 100%;
+    /* padding: 2% 0%; */
+}
+
+.contenedor3-texto {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background: rgba( 255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 20px);
+    -webkit-backdrop-filter: blur( 20px);
+    padding: 2% 0;
+    gap: 10px;
+}
+
+.contenedor3-texto h1 {
+    color: var(--bg-titulos);
+    font-size: 1.8em;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal
+}
+
+.contenedor3-texto p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+    color: black;
+}
+
+.boton-contenedor3 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-oscuro);
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 1%;
+}
+
+.boton-contenedor3 a {
+    width: 100%;
+    background-color: var(--color-oscuro);
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 2px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#boton-contenedor3>a {
+    transition: all .5s ease-in-out;
+}
+
+#boton-contenedor3:hover a {
+    background: white;
+    color: var(--color-oscuro);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-size: 15px;
+    border: none;
+}
+
+
+/* Contenedor como funciona nuestro servicio */
+
+.funcionamiento-servicio {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.contendor-funcionamiento {
+    display: flex;
+    gap: 2%;
+}
+
+.texto-funcionamiento {
+    /* border: 1px solid green; */
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 2%;
+    gap: 30px;
+}
+
+.titulo-funcionamiento h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+    color: var(--bg-titulos);
+}
+
+.titulo-funcionamiento span {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+    color: var(--color-sub-titulo);
+}
+
+.subtitulo-funcionamiento h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8vw;
+    color: black;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.card-funcionamiento {
+    /* border: 1px solid violet; */
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 0 6px 12px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 2.5px);
+    -webkit-backdrop-filter: blur( 2.5px);
+}
+
+.contenedor-card {
+    width: 100%;
+    /* border: 1px solid navy; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 2%;
+    /* justify-content: space-evenly; */
+}
+
+.card {
+    width: 25%;
+    display: flex;
+    gap: 5px;
+    padding: 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+
+.icono-card img {
+    width: 40px;
+}
+
+.texto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.texto-card h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2vw;
+    color: var(--bg-titulos);
+    text-align: left;
+}
+
+.texto-card p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1vw;
+    text-align: left;
+    color: gray;
+}
+
+.img-funcionamiento {
+    width: 100%;
+    height: 30%;
+}
+
+.img-funcionamiento img {
+    width: 50%;
+    height: 100%;
+}
+
+.contenedor-parallax2 {
+    width: 100%;
+    height: 50vh;
+    background-image: url(./recursos/parallax2.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 8em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.parallax2-texto {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background: rgba( 255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 20px);
+    -webkit-backdrop-filter: blur( 20px);
+    padding: 2% 0;
+    gap: 10px;
+}
+
+.parallax2-texto h1 {
+    color: var(--bg-titulos);
+    font-size: 2.5vw;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal
+}
+
+
+/* contenedor de contactos */
+
+.contenedor-contactos {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5em;
+    margin-top: 5%;
+}
+
+.Contactos {
+    /* border: 1px solid green; */
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1% 1%;
+    background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 0 6px 12px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 2.5px);
+    -webkit-backdrop-filter: blur( 2.5px);
+}
+
+.separador-contactos {
+    width: 1px;
+    height: 180px;
+    background-color: var(--color-oscuro);
+}
+
+.seccion-contactos {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.seccion-contactos img {
+    width: 2.5em;
+}
+
+.seccion-contactos h4 {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2vw;
+    color: var(--bg-titulos);
+}
+
+.seccion-contactos a {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: grey;
+}
+
+.seccion-contactos p {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    color: grey;
+}
+
+.titulo-contactos h1 {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    color: var(--bg-titulos);
+}
+
+.titulo-contactos span {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    color: var(--color-sub-titulo);
+}
+
+
+/* contenedor beneficios  */
+
+.contenedorpadre-beneficios {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.container-beneficios {
+    width: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.contenedor-beneficios {
+    /* border: 1px solid navy; */
+    width: 50%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2% 2%;
+    background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 0 6px 12px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 2.5px);
+    -webkit-backdrop-filter: blur( 2.5px);
+}
+
+.beneficios-tarjetas {
+    width: 100%;
+    /* border: 1px solid saddlebrown; */
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.beneficios-card {
+    width: 30%;
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 5px;
+}
+
+.beneficios-card img {
+    width: 25px;
+    height: 25px;
+}
+
+.beneficios-card h4 {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2vw;
+    text-align: left;
+    color: var(--bg-titulos);
+}
+
+
+/* .gridcontainer-beneficios {
+    border: 1px solid purple;
+    width: 50%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em; */
+
+.titulo-beneficios h1 {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    color: var(--bg-titulos);
+    padding: 2% 2%;
+    text-align: center;
+}
+
+.titulo-beneficios span {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    color: var(--color-sub-titulo);
+}
+
+.grid-beneficios {
+    width: 40%;
+    height: 50vh;
+    /* border: 1px solid orange; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    padding: 1% 1%;
+}
+
+.grid1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(./recursos/Asbestos-Removal-Professional-Toronto-q8dt2q9kn9cooje97vtwihh8a3yl271q9q45ptu7pk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-image: url(./recursos/Asbestos-Removal-Professional-Toronto-q8dt2q9kn9cooje97vtwihh8a3yl271q9q45ptu7pk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid3 {
+    grid-column: 1/2;
+    grid-row: 2;
+    background-image: url(./recursos/Asbestos-Removal-Professional-Toronto-q8dt2q9kn9cooje97vtwihh8a3yl271q9q45ptu7pk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid4 {
+    grid-column: 2/4;
+    grid-row: 2;
+    background-image: url(./recursos/Asbestos-Removal-Professional-Toronto-q8dt2q9kn9cooje97vtwihh8a3yl271q9q45ptu7pk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
