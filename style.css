@@ -20,7 +20,7 @@
         font-style: normal;
           font-weight: 400;
         }
-    
+
          */
 
  :root {
@@ -40,7 +40,7 @@ body {
 
 .contedor-principal {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(./recursos/conteneror-principal.jpg);
     background-position: top;
     background-size: cover;
@@ -53,19 +53,26 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgba( 255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-    backdrop-filter: blur( 3px);
-    -webkit-backdrop-filter: blur( 3px);
-    border: 1px solid rgba( 255, 255, 255, 0.18);
-    border: 1px solid rgba( 255, 255, 255, 0.18);
+    background: rgba( 255, 255, 255, 0.65);
+    box-shadow: 0 2px 10px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    padding: 4% 0;
 }
 
+.enlaces-navegador {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 .enlaces-navegador a {
+    width: 100%;
     color: var(--bg-titulos);
-    font-size: 1.4em;
+    font-size: 1.6vw;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -142,6 +149,10 @@ body {
 
 .login a:hover {
     color: var(--color-sub-titulo);
+    font-size: 1.6vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
@@ -149,6 +160,9 @@ body {
 
 ul {
     list-style: none;
+    width: 100%;
+    display: flex;
+    gap: 20px;
 }
 
 ul li {
@@ -176,7 +190,7 @@ ul li .dropdown li {
 
 ul li ul.dropdown {
     width: 250%;
-    background-color: rgba(128, 128, 128, 0.842);
+    background-color: #ffffff;
     position: absolute;
     z-index: 999;
     display: none;
@@ -186,7 +200,7 @@ ul li ul.dropdown {
 ul li a:hover {
     color: #0cbccc;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -199,32 +213,33 @@ ul li:hover ul.dropdown {
 }
 
 .titulo-contenedor1 {
-    width: 60%;
+    width: 70%;
     height: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
+    padding: 10%;
 }
 
 .titulo-contenedor1 h1,
 span {
     font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
-    font-size: 3.2em;
+    font-size: 3.5vw;
     text-align: center;
 }
 
 .titulo-contenedor1 h1 {
-    color: #042469;
+    color: #010a1d;
 }
 
 .titulo-contenedor1 span {
     color: var(--color-sub-titulo);
     font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
-    font-size: 1em;
+    font-size: 3.7vw;
     letter-spacing: 1px;
 }
 
@@ -234,7 +249,7 @@ span {
     justify-content: center;
     margin-top: 30px;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -246,7 +261,7 @@ span {
     background: white;
     color: var(--color-oscuro);
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: 1px;
     font-size: 0.9em;
@@ -260,11 +275,12 @@ span {
     text-align: center;
     padding: 5% 5%;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: 1px;
     color: #ffffff;
-    font-size: 0.9em;
+    font-size: 1.5vw;
+    border-radius: 50px;
 }
 
 .contenedor1-parrafo {
@@ -281,25 +297,172 @@ span {
 
 .contenedor1-parrafo p {
     text-align: center;
-    color: var(--bg-titulos);
+    color: #010a1d;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 2vw;
 }
 
 .contenedor-IAQ {
+    /* border: 1px solid red; */
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 12em;
-    /* background-image: url(./recursos/9218023_83.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: contrast(90%); */
+    justify-content: center;
+    gap: 2.5em;
+    margin-top: 5%;
+}
+
+.contenedor-internoIAQ {
+    /* border: 1px solid green; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.titulo-IAQ {
+    width: 100%;
+    /* border: 1px solid purple; */
+}
+
+.titulo-IAQ h1 {
+    color: var(--bg-titulos);
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.span-IAQ {
+    color: var(--color-sub-titulo);
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    text-indent: 20px;
+    padding: 2% 0;
+    margin-bottom: 2%;
+}
+
+.parrafoIAQ p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 2vw;
+    text-align: left;
+}
+
+.tarjetas-IAQ {
+    /* border: 1px solid rgb(128, 0, 85); */
+    width: 80%;
+    display: flex;
+    gap: 1em;
+}
+
+.card-IAQ {
+    width: 25%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1% 0;
+    background: rgba( 255, 255, 255, 0.3);
+    box-shadow: 0 1px 3px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 5.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    /* border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18); */
+}
+
+.card-IAQ img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-imgIAQ {
+    width: 85%;
+    height: 50%;
+}
+
+.card-texto {
+    width: 85%;
+    height: 50%;
+    /* background: #ffffff; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-texto h4 {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8vw;
+    color: var(--color-oscuro);
+}
+
+.card-texto p {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    color: gray;
+    text-align: justify;
+}
+
+.boton-IAQ a {
+    width: 100%;
+    background-color: var(--color-oscuro);
+    text-decoration: none;
+    text-align: center;
+    padding: 2% 2%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius: 50px;
+}
+
+.boton-IAQ {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-top: 1%;
+}
+
+#boton-IAQ>a {
+    transition: all .5s ease-in-out;
+}
+
+#boton-IAQ:hover a {
+    background: white;
+    color: var(--color-oscuro);
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-size: 1.2em;
 }
 
 .texto-IAQ {
@@ -473,31 +636,6 @@ span {
     -webkit-border-radius: 10px 48px 10px 48px;
 }
 
-.titulo-IAQ {
-    width: 100%;
-}
-
-.titulo-IAQ h1 {
-    color: var(--bg-titulos);
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2.3vw;
-    text-align: center;
-}
-
-.span-IAQ {
-    color: var(--color-sub-titulo);
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2.3vw;
-    letter-spacing: 1px;
-    text-indent: 20px;
-    padding: 2% 0;
-    margin-bottom: 2%;
-}
-
 
 /* Sebas  */
 
@@ -532,6 +670,27 @@ span{
     width: 100%;
     height: 100vh;
     overflow: clip;
+    margin-top: 3%;
+    /* background-image: url(imgs/background-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.Sect-slider img {
+    position: absolute;
+    width: 200%;
+    /* height: 150vh; */
+    animation: parallax1 linear;
+    animation-timeline: scroll();
+}
+
+@keyframes parallax1 {
+    from {
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(100vh);
+    }
 }
 
 .Services-tl {
@@ -539,7 +698,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 100px;
     z-index: 100;
 }
 
@@ -995,12 +1154,12 @@ span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 12em;
     filter: contrast(150%);
     display: flex;
     justify-content: start;
     align-items: center;
     background-attachment: fixed;
+    margin-top: 5%;
 }
 
 .contedor3-titulo {
@@ -1011,7 +1170,7 @@ span{
 
 .contenedor3-texto {
     width: 50%;
-    height: 50%;
+    height: 65%;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -1026,22 +1185,23 @@ span{
 
 .contenedor3-texto h1 {
     color: var(--bg-titulos);
-    font-size: 1.8em;
+    font-size: 2em;
     font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal
 }
 
 .contenedor3-texto p {
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    font-size: 1.1em;
+    font-size: 1.4em;
     color: black;
+    text-align: center;
 }
 
 .boton-contenedor3 {
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: center;
     background-color: var(--color-oscuro);
@@ -1051,22 +1211,21 @@ span{
     font-style: normal;
     letter-spacing: 1px;
     font-weight: 400;
-    font-size: 1em;
     margin-top: 1%;
+    border-radius: 50px;
 }
 
 .boton-contenedor3 a {
     width: 100%;
-    background-color: var(--color-oscuro);
     text-decoration: none;
     text-align: center;
-    padding: 12px 2px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 1.2em;
+    padding: 2% 2%;
 }
 
 #boton-contenedor3>a {
@@ -1077,12 +1236,12 @@ span{
     background: white;
     color: var(--color-oscuro);
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: 1px;
     font-style: normal;
-    font-size: 15px;
-    border: none;
+    font-size: 1.2em;
+    border-radius: 50px;
 }
 
 
@@ -1102,7 +1261,7 @@ span{
 .texto-funcionamiento {
     /* border: 1px solid green; */
     width: 45%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1141,7 +1300,7 @@ span{
 .card-funcionamiento {
     /* border: 1px solid violet; */
     width: 60%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1149,7 +1308,7 @@ span{
     margin-top: 2%;
     margin-bottom: 2%;
     background: rgba( 255, 255, 255, 0.55);
-    box-shadow: 0 6px 12px 0 rgba( 31, 38, 135, 0.37);
+    box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 2.5px);
     -webkit-backdrop-filter: blur( 2.5px);
 }
@@ -1165,7 +1324,8 @@ span{
 }
 
 .card {
-    width: 25%;
+    /* border: 1px solid red; */
+    width: 27%;
     display: flex;
     gap: 5px;
     padding: 10px 10px 10px;
@@ -1219,7 +1379,7 @@ span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 8em;
+    margin-top: 5%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -1272,7 +1432,7 @@ span{
     align-items: center;
     padding: 1% 1%;
     background: rgba( 255, 255, 255, 0.55);
-    box-shadow: 0 6px 12px 0 rgba( 31, 38, 135, 0.37);
+    box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 2.5px);
     -webkit-backdrop-filter: blur( 2.5px);
 }
@@ -1351,6 +1511,7 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1em;
     margin-top: 5%;
 }
 
@@ -1374,7 +1535,7 @@ span{
     gap: 2em;
     padding: 2% 2%;
     background: rgba( 255, 255, 255, 0.55);
-    box-shadow: 0 6px 12px 0 rgba( 31, 38, 135, 0.37);
+    box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 2.5px);
     -webkit-backdrop-filter: blur( 2.5px);
 }
@@ -1409,16 +1570,6 @@ span{
     color: var(--bg-titulos);
 }
 
-
-/* .gridcontainer-beneficios {
-    border: 1px solid purple;
-    width: 50%;
-    height: 100%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em; */
-
 .titulo-beneficios h1 {
     width: 100%;
     box-sizing: border-box;
@@ -1442,13 +1593,17 @@ span{
 
 .grid-beneficios {
     width: 40%;
-    height: 50vh;
+    height: 60vh;
     /* border: 1px solid orange; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
+    gap: 10px;
     padding: 1% 1%;
+    background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 2.5px);
+    -webkit-backdrop-filter: blur( 2.5px);
 }
 
 .grid1 {
@@ -1463,16 +1618,16 @@ span{
 .grid2 {
     grid-column: 2/4;
     grid-row: 1/2;
-    background-image: url(./recursos/Asbestos-Removal-Professional-Toronto-q8dt2q9kn9cooje97vtwihh8a3yl271q9q45ptu7pk.jpg);
+    background-image: url(./logos/ISOTIPO\ -\ LOGO\ .webp);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .grid3 {
     grid-column: 1/2;
     grid-row: 2;
-    background-image: url(./recursos/Asbestos-Removal-Professional-Toronto-q8dt2q9kn9cooje97vtwihh8a3yl271q9q45ptu7pk.jpg);
+    background-image: url(./recursos/hogar-afialicion.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1481,7 +1636,7 @@ span{
 .grid4 {
     grid-column: 2/4;
     grid-row: 2;
-    background-image: url(./recursos/Asbestos-Removal-Professional-Toronto-q8dt2q9kn9cooje97vtwihh8a3yl271q9q45ptu7pk.jpg);
+    background-image: url(./recursos/contenedor3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
