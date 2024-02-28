@@ -504,7 +504,7 @@ span {
 h1,
 h2,
 h3 {
-    font-family: "Playfair Display", serif;
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -514,7 +514,7 @@ h3 {
 p,
 a,
 span{
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -829,7 +829,7 @@ span{
 .Client-content .Client-name {
     font-size: 2vw;
     text-align: center;
-    color: var(--color-titulo);
+    color: var(--bg-titulos);
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
@@ -864,8 +864,14 @@ span{
 .Sect-moho h1{
     width: 80%;
     font-size: 2.8vw;
+    color: var(--bg-titulos);
 }
 
+.Sect-moho h1 span{
+    width: 80%;
+    font-size: 2.8vw;
+    color: var(--color-sub-titulo);
+}
 .Art-moho-1{
     display: flex;
     width: 100%;
@@ -897,8 +903,15 @@ span{
 }
 .Dv-moho-2 h2{
     font-size: 1.8vw;
+    color: var(--bg-titulos);
+    font-weight: 500;
 }
 
+.Dv-moho-2 h2 span{
+    font-size: 1.8vw;
+    color: var(--color-sub-titulo);
+    font-weight: 500;
+}
 .P-moho{
     font-size: 1.3vw;
     letter-spacing: 1px;
@@ -944,8 +957,14 @@ span{
 .Art-serv-clt-tl{
     font-size: 2.4vw;
     margin-bottom: 3%;
+    color: var(--bg-titulos);
 }
-
+.Art-serv-clt-tl span{
+    font-size: 2.4vw;
+    font-weight: bold;
+    margin-bottom: 3%;
+    color: var(--color-sub-titulo);
+}
 .Art-serv-clt-p{
     font-size: 1.3vw;
     letter-spacing: 1px;
