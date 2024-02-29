@@ -79,7 +79,8 @@ body {
 .logo-empresa img {
     width: 14em;
 }
-.login{
+
+.login {
     width: 500px;
     display: flex;
     gap: 20px;
@@ -99,9 +100,8 @@ body {
 .contedor-banderas {
     width: 33%;
     display: grid;
-    grid-template-columns:repeat(1,1fr 1px 1fr) ;
+    grid-template-columns: repeat(1, 1fr 1px 1fr);
     place-items: center;
-
 }
 
 .img-lenguaje img {
@@ -112,7 +112,7 @@ body {
 }
 
 .img-login img {
-    width: 25px;    
+    width: 25px;
 }
 
 .lenguaje {
@@ -120,13 +120,15 @@ body {
     align-items: center;
     padding-right: 5px;
 }
-.texto-lenguaje{
+
+.texto-lenguaje {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .texto-lenguaje p {
-    text-align: center;    
+    text-align: center;
     font-size: 1vw;
     color: var(--color-titulo);
     cursor: pointer;
@@ -148,7 +150,7 @@ body {
 .login {
     width: 45%;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     gap: 5px;
     align-items: center;
 }
@@ -281,7 +283,7 @@ span {
     font-style: normal;
     letter-spacing: 1px;
     font-size: 1.5vw;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .boton-contenedor1 a {
@@ -690,7 +692,6 @@ span {
     background-position: center; */
 }
 
-
 .Services-tl {
     width: 100%;
     display: flex;
@@ -753,7 +754,6 @@ span {
     transform: translate(0, 0);
     width: 100%;
     height: 100%;
-    
 }
 
 .Slider .Services:nth-child(3) {
@@ -779,7 +779,7 @@ span {
     background-color: #dde7eec0;
     backdrop-filter: blur(1px);
     padding: 10px;
-    transform: translate(0, -50%);    
+    transform: translate(0, -50%);
     display: none;
     padding: 2%;
     border-radius: 45px 5px 45px 25px;
@@ -1019,9 +1019,42 @@ span {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 2% 0%;
     margin-top: 4%;
+    gap: 20px;
+}
+
+.cont-moho2 {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.P-moho2 {
+    font-size: 1.7vw;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    text-align: right;
+    margin: 1em 0px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.cont-moho2 h1 {
+    font-size: 3vw;
+    font-weight: 600;
+    color: var(--bg-titulos);
+    letter-spacing: 1px;
+}
+
+.cont-moho2 span {
+    font-size: 2.8vw;
+    color: var(--color-sub-titulo);
+    letter-spacing: 1px;
 }
 
 .Sect-moho {
@@ -1672,7 +1705,7 @@ span {
     background-size: cover;
 }
 
-.solicitud{
+.solicitud {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -1686,7 +1719,7 @@ span {
 
 .form {
     width: 100%;
-    height:60vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1694,37 +1727,33 @@ span {
     background-color: #355891;
     padding: 20px;
     border-radius: 10px;
-    
-    
-  }
-  
-  .message {
+}
+
+.message {
     color: #355891;
     font-size: 14px;
-  }
-  
-  .flex {
+}
+
+.flex {
     display: flex;
     width: 100%;
     gap: 6px;
-  }
-  
-  .form label {
+}
+
+.form label {
     position: relative;
-   
-  }
-  
-  .form label .input {
+}
+
+.form label .input {
     width: 100%;
     padding: 10px 10px 20px 10px;
     outline: 0;
     border: 1px solid #355891;
     border-radius: 5px;
-     position: relative;
-    
-  }
-  
-  .form label .input + span {
+    position: relative;
+}
+
+.form label .input+span {
     position: absolute;
     left: 10px;
     top: 15px;
@@ -1733,32 +1762,33 @@ span {
     cursor: text;
     transition: 0.3s ease;
     z-index: 3;
-  }
-  
-  .form label .input:placeholder-shown + span {
+}
+
+.form label .input:placeholder-shown+span {
     top: 15px;
     font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,.form label .input:valid + span {
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
     top: 30px;
     font-size: 0.7em;
     font-weight: 600;
-  }
-  
-  .form label .input:valid + span {
+}
+
+.form label .input:valid+span {
     color: green;
-  }
-  
-  .input01 {
+}
+
+.input01 {
     width: 100%;
     padding: 10px 10px 20px 10px;
     outline: 0;
     border: 1px solid #355891;
     border-radius: 5px;
-  }
-  
-  .form label .input01 + span {
+}
+
+.form label .input01+span {
     position: absolute;
     left: 10px;
     top: 50px;
@@ -1766,39 +1796,40 @@ span {
     font-size: 0.9em;
     cursor: text;
     transition: 0.3s ease;
-  }
-  
-  .form label .input01:placeholder-shown + span {
+}
+
+.form label .input01:placeholder-shown+span {
     top: 40px;
     font-size: 0.9em;
-  }
-  
-  .form label .input01:focus + span,.form label .input01:valid + span {
+}
+
+.form label .input01:focus+span,
+.form label .input01:valid+span {
     top: 50px;
     font-size: 0.7em;
     font-weight: 600;
-  }
-  
-  .form label .input01:valid + span {
-    color: green;
-  }
- 
+}
 
-  .servicio{
+.form label .input01:valid+span {
+    color: green;
+}
+
+.servicio {
     color: white;
     outline: 0;
-   
-  }
-  .drop{
-    border: none;
-    outline: none;
-  }
-  .value{
-    outline: none;
-    border: none;
+}
 
-  }
-  .fancy {
+.drop {
+    border: none;
+    outline: none;
+}
+
+.value {
+    outline: none;
+    border: none;
+}
+
+.fancy {
     background-color: white;
     border: 2px solid #355891;
     border-radius: 0px;
@@ -1819,9 +1850,9 @@ span {
     transition: all 0.3s ease-in-out;
     user-select: none;
     font-size: 13px;
-  }
-  
-  .fancy::before {
+}
+
+.fancy::before {
     content: " ";
     width: 1.7rem;
     height: 2px;
@@ -1833,9 +1864,9 @@ span {
     transform: translateX(230%);
     transform-origin: center;
     transition: background 0.3s linear, width 0.3s linear;
-  }
-  
-  .fancy .text {
+}
+
+.fancy .text {
     font-size: 1.125em;
     line-height: 1.33333em;
     padding-left: 2em;
@@ -1846,9 +1877,9 @@ span {
     text-decoration: none;
     color: #355891;
     transform: translateX(30%);
-  }
-  
-  .fancy .top-key {
+}
+
+.fancy .top-key {
     height: 2px;
     width: 1.5625rem;
     top: -2px;
@@ -1856,9 +1887,9 @@ span {
     position: absolute;
     background: #355891;
     transition: width 0.5s ease-out, left 0.3s ease-out;
-  }
-  
-  .fancy .bottom-key-1 {
+}
+
+.fancy .bottom-key-1 {
     height: 2px;
     width: 1.5625rem;
     right: 1.875rem;
@@ -1866,9 +1897,9 @@ span {
     position: absolute;
     background: #355891;
     transition: width 0.5s ease-out, right 0.3s ease-out;
-  }
-  
-  .fancy .bottom-key-2 {
+}
+
+.fancy .bottom-key-2 {
     height: 2px;
     width: 0.625rem;
     right: 0.625rem;
@@ -1876,60 +1907,57 @@ span {
     position: absolute;
     background: #355891;
     transition: width 0.5s ease-out, right 0.3s ease-out;
-  }
-  
-  .fancy:hover {
+}
+
+.fancy:hover {
     color: #355891;
     background: #5f82a9;
-  }
-  
-  .fancy:hover::before {
+}
+
+.fancy:hover::before {
     width: 1.5rem;
     background: #355891;
-  }
-  
-  .fancy:hover .text {
+}
+
+.fancy:hover .text {
     color: white;
     padding-left: 1.5em;
-  }
-  
-  .fancy:hover .top-key {
+}
+
+.fancy:hover .top-key {
     left: -2px;
     width: 0px;
-  }
-  
-  .fancy:hover .bottom-key-1,
-   .fancy:hover .bottom-key-2 {
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
     right: 0;
     width: 0;
-  }
+}
 
-
-  .titulo-solicitud{
+.titulo-solicitud {
     width: 40vh;
     height: 60vh;
-   
-  }
+}
 
-  .titulo-soli{
+.titulo-soli {
     font-size: 50px;
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 600;
     color: var(--bg-titulos);
-    
-  }
+}
 
-  .cambio-soli{
+.cambio-soli {
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 25px;
     color: #355891;
-  }
+}
 
-  .parrafo-soli{
+.parrafo-soli {
     width: 350px;
     font-family: "Lato", sans-serif;
     font-style: normal;
@@ -1939,23 +1967,21 @@ span {
     align-items: center;
     text-align: left;
     color: var(--bg-titulos);
-    background-color: #355891b0; 
+    background-color: #355891b0;
     border-radius: 5px;
     margin-top: 10px;
+}
 
-    
-  }
-
-  .registro{
+.registro {
     width: 100%;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
-  .form-container {
+
+.form-container {
     width: 350px;
     height: 70vh;
     background-color: #fff;
@@ -1969,40 +1995,42 @@ span {
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(173, 51, 51, 0.168);
-  }
+}
 
-  .social-buttons{
+.social-buttons {
     width: 300px;
     height: 50px;
     margin-top: 40px;
-  }
-  span{
+}
+
+span {
     font-family: "Lato", sans-serif;
-        font-style: normal;
-          font-weight: 400;
+    font-style: normal;
+    font-weight: 400;
     font-size: 15px;
-  }
-  .form-container button:active {
+}
+
+.form-container button:active {
     scale: 0.95;
-  }
-  
-  .form-container .logo-container {
+}
+
+.form-container .logo-container {
     margin-bottom: 12px;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-  }
-  
-  .form-container .social-buttons {
+}
+
+.form-container .social-buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     flex-direction: column;
     gap: 12px;
     align-items: center;
-  }
-  
-  .form-container .social-button {
+}
+
+.form-container .social-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2015,70 +2043,70 @@ span {
     cursor: pointer;
     border-radius: 6px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
-  }
-  
-  .form-container .social-button svg {
+}
+
+.form-container .social-button svg {
     width: 22px;
     height: 22px;
     fill: white;
-  }
-  
-  .form-container .social-button.facebook {
-    background-color: #1778f2;
-  }
-  
-  .form-container .social-button.apple {
-    background-color: #212121;
-  }
+}
 
-  .form-container .social-button.google {
+.form-container .social-button.facebook {
+    background-color: #1778f2;
+}
+
+.form-container .social-button.apple {
+    background-color: #212121;
+}
+
+.form-container .social-button.google {
     background-color: white;
     color: black;
-  }
-  
-  .form-container .form {
+}
+
+.form-container .form {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
-  
-  .form-container .form-group {
+}
+
+.form-container .form-group {
     display: flex;
     flex-direction: column;
     gap: 2px;
-  }
-  
-  .form-container .form-group label {
+}
+
+.form-container .form-group label {
     display: block;
     margin-bottom: 5px;
     color: white;
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
-  }
-  
-  .form-container .form-group input[type="text"],
-  .form-container .form-group input[type="password"] {
+}
+
+.form-container .form-group input[type="text"],
+.form-container .form-group input[type="password"] {
     width: 100%;
     padding: 12px 16px;
     border-radius: 6px;
     font-family: "Lato", sans-serif;
     font-style: normal;
-      font-weight: 400;
+    font-weight: 400;
     border: 1px solid #ccc;
-  }
-  
-  .form-container .form-group input::placeholder {
+}
+
+.form-container .form-group input::placeholder {
     opacity: 0.5;
-  }
-  
-  .form-container .form-group input[type="text"]:focus,
-  .form-container .form-group input[type="password"]:focus {
+}
+
+.form-container .form-group input[type="text"]:focus,
+.form-container .form-group input[type="password"]:focus {
     outline: none;
     border-color: #1778f2;
-  }
-  
-  .form-container .form-submit-btn {
+}
+
+.form-container .form-submit-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2094,57 +2122,128 @@ span {
     cursor: pointer;
     border-radius: 6px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
-  }
-  
-  .form-container .form-submit-btn:hover {
+}
+
+.form-container .form-submit-btn:hover {
     background-color: #313131;
-  }
-  
-  .form-container .link {
+}
+
+.form-container .link {
     color: #1778f2;
     text-decoration: none;
-  }
-  
-  .form-container .forgot-password-link {
+}
+
+.form-container .forgot-password-link {
     align-self: flex-end;
     margin-top: -20px;
-  }
-  
-  .form-container .signup-link {
+}
+
+.form-container .signup-link {
     align-self: center;
     font-weight: 500;
-  }
-  
-  .form-container .signup-link .link {
+}
+
+.form-container .signup-link .link {
     font-family: "Lato", sans-serif;
-        font-style: normal;
-          font-weight: 400;
-    
-  }
-  
-  .form-container .link:hover {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.form-container .link:hover {
     text-decoration: underline;
-  }
-  
-  .form-container .line {
+}
+
+.form-container .line {
     width: 100%;
     height: 1px;
     background-color: #212121;
     opacity: 0.1;
-  }
+}
 
-  .checkbox-input{
+.checkbox-input {
     width: 320px;
     justify-content: center;
     align-items: center;
     text-align: left;
     display: flex;
     font-family: "Lato", sans-serif;
-        font-style: normal;
-          font-weight: 400;
-    
-  }
-  .checkbox-input input{
+    font-style: normal;
+    font-weight: 400;
+}
+
+.checkbox-input input {
     margin-right: 10px;
-    
-  }
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: rgb(117, 117, 117);
+    -webkit-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
+}
+
+.contenedor-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    padding: 3% 0;
+}
+
+.enlaces-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.enlaces-footer a {
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: var(--bg-titulos);
+    font-weight: 400;
+}
+
+.enlaces-footer a:hover {
+    color: var(--color-sub-titulo);
+}
+
+.redes-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.instragram-footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.instragram-footer img {
+    width: 1.5em;
+}
+
+.instragram-footer a {
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: var(--bg-titulos);
+    font-weight: 400;
+}
+
+.instragram-footer a:hover {
+    color: var(--color-sub-titulo);
+}
+
+.copyright {
+    display: flex;
+}
+
+.copyright span {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
