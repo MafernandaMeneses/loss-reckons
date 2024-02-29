@@ -92,9 +92,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #dde7ee73;
     border-radius: 10px;
     transform: translateX(25%);
+}
+
+@media (max-width:1400px) {
+    .contedor-lenguaje {
+    transform: translatex(0%);
+}
 }
 
 .contedor-banderas {
@@ -167,7 +172,7 @@ body {
 
 .login a:hover {
     color: var(--color-sub-titulo);
-    font-size: 1.6vw;
+    font-size: 1vw;
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -397,18 +402,27 @@ span {
     box-shadow: 0 1px 3px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 5.5px);
     -webkit-backdrop-filter: blur( 5.5px);
+    border-radius: 60px 5px 60px 25px;
+    transition:  0.9s;
     /* border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18); */
 }
 
-.card-IAQ img {
-    width: 100%;
-    height: 100%;
-}
-
 .card-imgIAQ {
     width: 85%;
-    height: 50%;
+    height: 50%; 
+       
+}
+.card-IAQ:hover {    
+    transform: translateY(-25px);
+}
+
+
+.card-imgIAQ img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 45px 5px 45px 25px;
 }
 
 .card-texto {
@@ -884,20 +898,22 @@ span {
 .Slider2-cont {
     position: absolute;
     overflow: clip;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     min-width: 450px;
     height: 80%;
+    background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37);
 }
 
-.Slider2-cont .Slider2 .Clients {
+.Slider2 .Clients{
     min-width: 250px;
     max-height: 500px;
     position: absolute;
     top: 50%;
-    transform: translate( 0%, 30%);
+    transform: translate( 0%, 10%);
     display: inline-block;
     transition: 1s;
 }
@@ -905,7 +921,7 @@ span {
 .Slider2 .Clients:nth-child(1) {
     top: 0;
     left: 0;
-    transform: translate(-75%, 30%);
+    transform: translate(-75%, 10%);
     width: 40%;
     height: 100%;
     opacity: 0;
@@ -914,7 +930,7 @@ span {
 .Slider2 .Clients:nth-child(2) {
     top: 0;
     left: 0;
-    transform: translate(0%, 30%);
+    transform: translate(0%, 10%);
     width: 40%;
     height: 100%;
 }
@@ -922,7 +938,7 @@ span {
 .Slider2 .Clients:nth-child(3) {
     top: 0;
     left: 0;
-    transform: translate(75%, 30%);
+    transform: translate(75%, 10%);
     width: 40%;
     height: 100%;
 }
@@ -930,7 +946,7 @@ span {
 .Slider2 .Clients:nth-child(4) {
     top: 0;
     left: 0;
-    transform: translate(150%, 30%);
+    transform: translate(150%, 10%);
     width: 40%;
     height: 100%;
 }
@@ -938,19 +954,31 @@ span {
 .Slider2 .Clients:nth-child(5) {
     top: 0;
     left: 0;
-    transform: translate(230%, 30%);
+    transform: translate(230%, 10%);
     width: 40%;
     height: 100%;
     opacity: 0;
 }
 
-.Slider2 .Clients:nth-child(n+6) {
+.Slider2 .Clients:nth-child(n + 6) {
     top: 0;
     left: 0;
-    transform: translate(300%, 30%);
+    transform: translate(300%, 10%);
     width: 40%;
     height: 100%;
 }
+
+@media (max-width: 1440px) {
+    .Slider2 .Clients:nth-child(1),
+    .Slider2 .Clients:nth-child(2),
+    .Slider2 .Clients:nth-child(3),
+    .Slider2 .Clients:nth-child(4),
+    .Slider2 .Clients:nth-child(5),
+    .Slider2 .Clients:nth-child(n + 6){
+        height: 60%;
+    }
+}
+
 
 .Slider2 .Clients .Client-pic {
     position: absolute;
@@ -979,7 +1007,7 @@ span {
     border-radius: 45px 5px 45px 25px;
     backdrop-filter: blur(1px);
     padding: 10px;
-    transform: translate(0, -30%);
+    transform: translate(0, -20%);
     display: none;
 }
 
@@ -1159,6 +1187,7 @@ span {
     border-radius: 45px 5px 45px 25px;
     box-shadow: 10px 10px 10px -14px rgba(0, 0, 0, 0.78);
     margin-right: 50px;
+    object-fit: cover;
 }
 
 .Art-serv-clt {
