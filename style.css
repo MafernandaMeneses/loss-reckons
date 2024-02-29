@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 
@@ -1339,11 +1340,13 @@ span {
     width: 100%;
     height: auto;
     margin-top: 2%;
+    overflow: clip;
 }
 
 .contendor-funcionamiento {
     display: flex;
     gap: 2%;
+    overflow: clip;
 }
 
 .texto-funcionamiento {
