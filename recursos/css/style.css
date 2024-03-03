@@ -332,7 +332,7 @@ span {
 .contenedor-IAQ {
     /* border: 1px solid red; */
     width: 100%;
-    height: 110vh;
+    /* height: 110vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,18 +388,19 @@ span {
 .tarjetas-IAQ {
     /* border: 1px solid rgb(128, 0, 85); */
     width: 80%;
-    display: flex;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr)) ;
+    gap: 2em;
 }
 
 .card-IAQ {
-    width: 25%;
-    height: 60vh;
-    display: flex;
+    width: 100%;
+    /* height: 60vh; */
+    display: none;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
-    padding: 1% 0;
+    gap: 2em;
+    padding: 6% 0;
     background: rgba( 255, 255, 255, 0.3);
     box-shadow: 0 1px 3px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 5.5px);
@@ -410,10 +411,17 @@ span {
     border: 1px solid rgba( 255, 255, 255, 0.18); */
 }
 
+.card-IAQ:nth-child(1),
+.card-IAQ:nth-child(2),
+.card-IAQ:nth-child(3),
+.card-IAQ:nth-child(4){
+    display: flex;
+}
+
 .card-imgIAQ {
     width: 85%;
     height: 50%; 
-       
+    object-fit: cover;       
 }
 .card-IAQ:hover {    
     transform: translateY(-25px);
@@ -456,7 +464,7 @@ span {
     text-align: justify;
 }
 
-.boton-IAQ a {
+.boton-IAQ a, .boton-IAQ div {
     width: 100%;
     background-color: var(--color-oscuro);
     text-decoration: none;
@@ -469,6 +477,7 @@ span {
     color: #ffffff;
     font-size: 1.2em;
     border-radius: 50px;
+    cursor:pointer;
 }
 
 .boton-IAQ {
@@ -904,8 +913,8 @@ span {
     width: 80%;
     min-width: 450px;
     height: 80%;
-    background: rgba( 255, 255, 255, 0.55);
-    box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37);
+    /* background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37); */
 }
 
 .Slider2 .Clients{
@@ -1392,14 +1401,14 @@ span {
 .card-funcionamiento {
     /* border: 1px solid violet; */
     width: 70%;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     overflow: clip;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 1% 0;
+    padding: 1% 0;
     background: rgba( 255, 255, 255, 0.55);
     box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 2.5px);
@@ -1410,28 +1419,60 @@ span {
     width: 100%;
     /* border: 1px solid navy; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
     margin-top: 2%;
-    overflow: clip;
     /* justify-content: space-evenly; */
 }
 
 .card {
     /* border: 1px solid red; */
-    width: 28%;
+    width: 25%;
     display: flex;
+    flex-direction: column;
+    position: relative;
     gap: 5px;
     padding: 10px 10px;
     border-radius: 20px 20px 20px 20px;
     -moz-border-radius: 20px 20px 20px 20px;
     -webkit-border-radius: 20px 20px 20px 20px;
 }
+.card:after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-top: 3px solid var(--color-sub-titulo);
+    border-left: 3px solid var(--color-sub-titulo);
+    border-radius: 0px 0 0 0;
+}
+.card:before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 3px solid var(--color-sub-titulo);
+    border-right: 3px solid var(--color-sub-titulo);
+    border-radius: 0 0 0px 0;
+}
+
+
+
+
 .icono-card{
-    width: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .icono-card img {
-    width: 100%;
+    width: 25%;
 }
 
 .texto-card {
@@ -1642,12 +1683,12 @@ span {
     width: 100%;
     /* border: 1px solid saddlebrown; */
     display: flex;
-    justify-content: center;
-    gap: 2em;
+    flex-wrap: wrap;
+    gap: 3em;
 }
 
 .beneficios-card {
-    width: 30%;
+    width: 40%;
     /* border: 1px solid green; */
     display: flex;
     gap: 5px;
@@ -1691,9 +1732,10 @@ span {
 
 .grid-beneficios {
     width: 40%;
-    height: 60vh;
+    height: auto;
     /* border: 1px solid orange; */
     display: grid;
+    overflow: hidden;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
@@ -1711,6 +1753,7 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    aspect-ratio: 4/3;
 }
 
 .grid2 {
@@ -1720,6 +1763,7 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    aspect-ratio: 4/3;
 }
 
 .grid3 {
@@ -1729,6 +1773,7 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    aspect-ratio: 4/3;
 }
 
 .grid4 {
@@ -1738,6 +1783,7 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    aspect-ratio: auto;
 }
 
 .solicitud {
