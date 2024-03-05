@@ -8,3 +8,4 @@ window.addEventListener('scroll', function(){
         scroll.stylePrueba.animation = 'mover 1s ease-out'
     }
 })
+

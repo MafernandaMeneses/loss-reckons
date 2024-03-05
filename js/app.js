@@ -25,3 +25,5 @@ prev2.addEventListener('click', function(){
     let clients = document.querySelectorAll('.Clients')
     document.querySelector('.Slider2').prepend(clients[clients.length-1])
 })
+
+
