@@ -330,6 +330,7 @@ span {
     font-size: 2vh;
 }
 
+
 .registro-login{
     height: 100vh;
     display: flex;
@@ -367,8 +368,7 @@ span {
   align-items: center;
   border-radius: 50%;
   margin: 0 auto;
-  box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3,
-    10px 10px 20px #a7aaaf, -10px -10px 20px #ffffff;
+
 }
   
   .message h2 {
@@ -405,6 +405,8 @@ p{
   
   .formulario {
     width: 400px;
+    display: inline-block;
+    vertical-align: top;
     padding: 1rem;
     margin: 2rem;
     border-radius: 40px;
@@ -500,6 +502,23 @@ p{
     padding: 2rem 0;
     color: var(--color-sub-titulo);
   }
+  .olvido-contraseña input a{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .olvido-passwor {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: "montserra";
+    color: var(--color-titulo);
+  }
   
   .formulario input {
     width: 70%;
@@ -550,35 +569,237 @@ p{
     visibility: hidden;
   }
 
-  @media screen and (max-width:800px){
-    .registro-login .container-form sign-up {
-        width: 90%;
-        height: 50%;
-        display: flex;
+  @media (max-width:720px){
+    .container-form {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20em;
+
       
     }
-   .container-form sign-in .formulario{
-    width: 60%;
-    height: 50%;
-    display: flex;
+    .formulario{
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
+        margin: 20px;
+       
     
-   }
 
-   .registro-login .container-form sign-up {
-    width: 30%;
-  
+    }
+
+    .create-account{
+        width: 100%;
+        display: flex;
+        margin-top: -20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    .cuenta-gratis{
+        width: 100%;
+        height: auto;
+    }
+    .message{
+        width: 90%;
+        height: 400px;
+        
+    }
+    .iconos{
+        width: 20%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+        
+    }
+
+    .border-icon-insta{
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    
+
+    }
+
+    .border-icon-insta a{
+      
+      background-size: auto;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .border-icon-google a{
+        background-size: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .border-icon-face a{
+       background-size: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .welcome-back{
+        width: 100%;
+     height: 50px;
+     margin-top: 50px;
+     
+    }
+
+ 
 }
-.container-form sign-in .formulario{
-width: 30%;
-height: 20%;
-display: flex;
-flex-direction: column;
-
+.recuperacion{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
 }
 
+.formulario2{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+    padding: 50px 35px 35px 35px;
+    
+}
 
+.create-account2 {
+    font-family: "montserra";
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+    color: var(--bg-titulos);
   }
   
+  .iconos2 {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    
+  }
+  
+ 
+   
+  .iconos2 i{
+ color: white;
+ 
+  }
+
+  
+  .border-icon2 {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin var(--color-titulo);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+  
+  }
+
+  .border-icon2-insta{
+    height: 20px;
+    width: 20px;
+    background:linear-gradient(orange, fuchsia, pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+  
+  }
+  .border-icon2-google{
+    height: 20px;
+    width: 20px;
+    background:linear-gradient(red,rgb(179, 3, 3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+  }
+
+  .border-icon2-face{
+    height: 20px;
+    width: 20px;
+    background:linear-gradient(blue, rgb(5, 5, 128));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+  }
+
+  .border-icon2:hover {
+    cursor: pointer;
+  }
+  
+
+
+  .formulario2 input {
+    width: 70%;
+    display: block;
+   margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--color-sub-titulos) thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-family: "montserra";
+    font-size: .9rem;
+    color: black;
+    border-bottom: #5f5f5f solid 1px;
+  }
+  
+  .formulario2 input[type="button"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color:var(--bg-titulos);
+    font-weight: 600;
+    margin-top: 3rem;
+     font-family: "montserra";
+    font-size: .8rem;
+    cursor: pointer;
+    color: #ffff;
+  
+  }
+
 .contenedor-IAQ {
     /* border: 1px solid red; */
     width: 100%;
@@ -2352,6 +2573,7 @@ span {
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
+       
     }
   }
 
