@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
     scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
     image-rendering: optimizeQuality;
 }
+
 
 
  :root {
@@ -15,6 +16,7 @@
     --color-titulo: #0010b3;
     --color-sub-titulo: #0cbccc;
     --color-oscuro: #063254;
+    --fuente-titulos: "Montserrat", sans-serif;
 }
 
 body {
@@ -59,7 +61,6 @@ body {
     width: 100%;
     color: var(--bg-titulos);
     font-size: 1.6vw;
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -80,7 +81,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transform: translateX(25%); */
 }
 
 .contedor-banderas {
@@ -118,7 +118,6 @@ body {
     font-size: 1vw;
     color: var(--color-titulo);
     cursor: pointer;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -144,7 +143,6 @@ body {
 .login a {
     text-decoration: none;
     color: var(--bg-titulos);
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1vw;
@@ -154,8 +152,7 @@ body {
 .login a:hover {
     color: var(--color-sub-titulo);
     font-size: 1vw;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -183,7 +180,6 @@ body {
     font-size: 1.2em;
     letter-spacing: 1px;
     color: var(--bg-titulos);
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -203,7 +199,6 @@ body {
 
 .enlaces-navegador ul li a:hover {
     color: #0cbccc;
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -271,7 +266,7 @@ body {
 
 .titulo-contenedor1 h1,
 span {
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 3.5vw;
@@ -283,8 +278,8 @@ span {
 }
 
 .titulo-contenedor1 span {
+    font-family: "Montserrat", sans-serif;
     color: var(--color-sub-titulo);
-    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 3.7vw;
@@ -296,7 +291,6 @@ span {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -308,8 +302,7 @@ span {
 #boton1-contenedor1:hover a {
     background: white;
     color: var(--color-oscuro);
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     font-size: 1.5vw;
@@ -322,8 +315,7 @@ span {
     text-decoration: none;
     text-align: center;
     padding: 5% 5%;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     color: #ffffff;
@@ -333,7 +325,6 @@ span {
 
 .contenedor1-parrafo {
     font-size: 1.2em;
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
     margin-top: 10px;
@@ -346,10 +337,9 @@ span {
 .contenedor1-parrafo p {
     text-align: center;
     color: #010a1d;
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 2vw;
+    font-size: 2.2vw;
 }
 
 .contenedor-IAQ {
@@ -379,16 +369,15 @@ span {
 
 .titulo-IAQ h1 {
     color: var(--bg-titulos);
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
     font-size: 3vw;
+    font-style: normal;
     text-align: center;
 }
 
 .span-IAQ {
     color: var(--color-sub-titulo);
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 3vw;
@@ -399,13 +388,17 @@ span {
 }
 
 .parrafoIAQ p {
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.7vw;
     text-align: justify;
     letter-spacing: 1px;
     line-height: 2.2vw;
+    color: grey;
+}
+
+.parrafoIAQ strong {
+    color: var(--color-sub-titulo);
 }
 
 .tarjetas-IAQ {
@@ -429,7 +422,7 @@ span {
     /* backdrop-filter: blur( 15.5px);
     -webkit-backdrop-filter: blur( 5.5px); */
     border-radius: 60px 5px 60px 25px;
-    transition:  0.9s;
+    transition: 0.9s;
     /* border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18); */
 }
@@ -437,19 +430,22 @@ span {
 .card-IAQ:nth-child(1),
 .card-IAQ:nth-child(2),
 .card-IAQ:nth-child(3),
-.card-IAQ:nth-child(4){
+.card-IAQ:nth-child(4) {
     display: flex;
 }
 
 .card-imgIAQ {
     width: 85%;
+    height: 50%;
+    object-fit: cover;
+
 }
+
 .card-IAQ:hover {
     transform: translateY(-25px);
 }
 
-
-.card-imgIAQ img{
+.card-imgIAQ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -467,7 +463,6 @@ span {
 
 .card-texto h4 {
     width: 100%;
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.8vw;
@@ -476,7 +471,6 @@ span {
 
 .card-texto p {
     width: 100%;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.3vw;
@@ -485,20 +479,20 @@ span {
     text-align: justify;
 }
 
-.boton-IAQ a, .boton-IAQ div {
-    width: 100%;
+.boton-IAQ a,
+.boton-IAQ div {
+    width: 60%;
     background-color: var(--color-oscuro);
     text-decoration: none;
     text-align: center;
     padding: 2% 2%;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     color: #ffffff;
     font-size: 2vw;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .boton-IAQ {
@@ -506,12 +500,12 @@ span {
     display: flex;
     justify-content: center;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     margin-top: 1%;
 }
+
 
 #boton-IAQ>a,
 #boton-IAQ>div{
@@ -520,31 +514,21 @@ span {
 
 #boton-IAQ:hover a,
 #boton-IAQ:hover div{
+
     background: white;
     color: var(--color-oscuro);
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
     letter-spacing: 1px;
     font-style: normal;
     font-size: 1.2em;
-}
+} 
 
 .texto-IAQ {
     width: 60%;
     display: flex;
     flex-direction: column;
-    /* background: rgba( 255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-    backdrop-filter: blur( 4px);
-    -webkit-backdrop-filter: blur( 4px); */
     gap: 30px;
-    /* -webkit-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    -moz-box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    box-shadow: 10px 10px 50px -14px rgba(0, 0, 0, 0.78);
-    border-radius: 10px 48px 10px 48px;
-    -moz-border-radius: 10px 48px 10px 48px;
-    -webkit-border-radius: 10px 48px 10px 48px; */
 }
 
 .primer-parrafoIAQ {
@@ -555,7 +539,6 @@ span {
 
 .primer-parrafoIAQ p {
     text-align: right;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
@@ -590,7 +573,6 @@ span {
 .Segundo-parrafoIAQ p {
     text-align: right;
     width: 100%;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-style: normal;
@@ -624,7 +606,6 @@ span {
 .tercer-parrafoIAQ p {
     width: 75%;
     text-align: right;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.3em;
@@ -705,6 +686,26 @@ span {
 /* Sebas  */
 
 
+
+/* fonts */
+
+h1,
+h2,
+h3 {
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p,
+a,
+span {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
 /* Seccion del Slider de Servicios */
 
 .Sect-slider {
@@ -714,7 +715,6 @@ span {
     min-height: 600px;
     overflow: clip;
     margin-top: 2%;
-
 }
 
 .Services-tl {
@@ -730,17 +730,15 @@ span {
     font-size: 3vw;
     color: var(--bg-titulos);
     z-index: inherit;
-    font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
 .Services-tl span {
     color: var(--color-sub-titulo);
-    font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3vw;
     letter-spacing: 1px;
 }
@@ -928,6 +926,7 @@ span {
     box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37); */
 }
 
+
 .Slider2{
     width: 80%;
     position: absolute;
@@ -992,7 +991,7 @@ span {
     opacity: 0;
 }
 
-.Slider2 .Clients:nth-child(n + 6) {
+.Slider2 .Clients:nth-child(n+6) {
     top: 0;
     left: 0;
     transform: translate(300%, 10%);
@@ -1006,11 +1005,10 @@ span {
     .Slider2 .Clients:nth-child(3),
     .Slider2 .Clients:nth-child(4),
     .Slider2 .Clients:nth-child(5),
-    .Slider2 .Clients:nth-child(n + 6){
+    .Slider2 .Clients:nth-child(n+6) {
         height: 60%;
     }
 } */
-
 
 .Slider2 .Clients .Client-pic {
     /* position: absolute; */
@@ -1100,19 +1098,20 @@ span {
     line-height: 1.4em;
     text-align: left;
     margin: 1em 0px;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
+    color: gray;
 }
 
 .cont-moho2 h1 {
     font-size: 3vw;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--bg-titulos);
     letter-spacing: 1px;
 }
 
 .cont-moho2 span {
     font-size: 2.8vw;
+    font-weight: 700;
     color: var(--color-sub-titulo);
     letter-spacing: 1px;
 }
@@ -1124,7 +1123,7 @@ span {
 .Sect-moho h1 {
     width: 80%;
     font-size: 3vw;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--bg-titulos);
     letter-spacing: 1px;
 }
@@ -1132,6 +1131,7 @@ span {
 .Sect-moho h1 span {
     width: 80%;
     font-size: 2.8vw;
+    font-weight: 700;
     color: var(--color-sub-titulo);
     letter-spacing: 1px;
 }
@@ -1167,6 +1167,7 @@ span {
     width: 100%;
 }
 
+
 .Dv-moho-1 h2 {
     font-size: 2.5vw;
     color: var(--bg-titulos);
@@ -1176,8 +1177,9 @@ span {
 
 .Dv-moho-1 h2 span {
     font-size: 2.5vw;
+
     color: var(--color-sub-titulo);
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
@@ -1187,8 +1189,8 @@ span {
     line-height: 1.4em;
     text-align: justify;
     margin: 1em 0px;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
+    color: grey;
 }
 
 
@@ -1223,14 +1225,14 @@ span {
 
 .Art-serv-clt-tl {
     font-size: 3vw;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
     color: var(--bg-titulos);
 }
 
 .Art-serv-clt-tl span {
     font-size: 3vw;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
     color: var(--color-sub-titulo);
 }
@@ -1240,7 +1242,7 @@ span {
     font-size: 1.7vw;
     font-weight: 400;
     letter-spacing: 1px;
-    line-height: 1.5em;
+    line-height: 1.4em;
     text-align: justify;
     margin-top: 3%;
 }
@@ -1250,7 +1252,7 @@ span {
 
 .contenedor3-imagen {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-image: url(../03_12_19_001_interior.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1287,15 +1289,14 @@ span {
 .contenedor3-texto h1 {
     color: var(--bg-titulos);
     font-size: 2vw;
-    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .contenedor3-texto p {
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.8vw;
     color: black;
@@ -1304,12 +1305,11 @@ span {
 }
 
 .boton-contenedor3 {
-    width: 45%;
+    width: 30%;
     display: flex;
     justify-content: center;
     background-color: var(--color-oscuro);
     color: #ffffff;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
@@ -1322,7 +1322,6 @@ span {
     width: 100%;
     text-decoration: none;
     text-align: center;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
@@ -1338,7 +1337,6 @@ span {
 #boton-contenedor3:hover a {
     background: white;
     color: var(--color-oscuro);
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
     letter-spacing: 1px;
@@ -1376,8 +1374,7 @@ span {
 }
 
 .titulo-funcionamiento h1 {
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-size: 3vw;
     letter-spacing: 1px;
@@ -1385,8 +1382,7 @@ span {
 }
 
 .titulo-funcionamiento span {
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-size: 3vw;
     color: var(--color-sub-titulo);
@@ -1394,11 +1390,10 @@ span {
 }
 
 .subtitulo-funcionamiento h4 {
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.8vw;
-    color: black;
+    color: grey;
     line-height: 1.5em;
     letter-spacing: 1px;
     text-align: left;
@@ -1445,6 +1440,7 @@ span {
     -moz-border-radius: 20px 20px 20px 20px;
     -webkit-border-radius: 20px 20px 20px 20px;
 }
+
 .card:after {
     display: block;
     content: "";
@@ -1457,6 +1453,7 @@ span {
     border-left: 3px solid var(--color-sub-titulo);
     border-radius: 0px 0 0 0;
 }
+
 .card:before {
     display: block;
     content: "";
@@ -1470,14 +1467,12 @@ span {
     border-radius: 0 0 0px 0;
 }
 
-
-
-
-.icono-card{
+.icono-card {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .icono-card img {
     width: 25%;
 }
@@ -1489,7 +1484,6 @@ span {
 }
 
 .texto-card h3 {
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.2vw;
@@ -1498,7 +1492,6 @@ span {
 }
 
 .texto-card p {
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.1vw;
@@ -1523,7 +1516,7 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 3%;
+    margin-top: 5%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -1531,7 +1524,7 @@ span {
 }
 
 .parallax2-texto {
-    width: 38%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -1546,9 +1539,8 @@ span {
 
 .parallax2-texto h1 {
     color: var(--bg-titulos);
-    font-size: 3vw;
+    font-size: 2.8vw;
     letter-spacing: 1px;
-    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal
 }
@@ -1604,7 +1596,6 @@ span {
 
 .seccion-contactos h4 {
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.6vw;
@@ -1614,7 +1605,6 @@ span {
 .seccion-contactos a {
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.6vw;
@@ -1623,7 +1613,6 @@ span {
 
 .seccion-contactos p {
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5vw;
@@ -1632,9 +1621,8 @@ span {
 
 .titulo-contactos h1 {
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3vw;
     letter-spacing: 1px;
     color: var(--bg-titulos);
@@ -1642,9 +1630,8 @@ span {
 
 .titulo-contactos span {
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3vw;
     letter-spacing: 1px;
     color: var(--color-sub-titulo);
@@ -1711,10 +1698,9 @@ span {
 
 .beneficios-card h4 {
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     text-align: left;
     color: var(--bg-titulos);
 }
@@ -1722,9 +1708,8 @@ span {
 .titulo-beneficios h1 {
     width: 100%;
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3vw;
     color: var(--bg-titulos);
     padding: 2% 2%;
@@ -1733,9 +1718,8 @@ span {
 
 .titulo-beneficios span {
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3vw;
     color: var(--color-sub-titulo);
 }
@@ -2033,7 +2017,6 @@ span {
 
 .titulo-soli {
     font-size: 50px;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 600;
     color: var(--bg-titulos);
@@ -2050,7 +2033,6 @@ span {
 
 .parrafo-soli {
     width: 350px;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -2088,10 +2070,10 @@ span {
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(173, 51, 51, 0.168);
-    position:absolute;
+    position: absolute;
 }
 
-.logo-container{
+.logo-container {
     color: var(--bg-titulos);
 }
 
@@ -2102,7 +2084,6 @@ span {
 }
 
 span {
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -2178,7 +2159,6 @@ span {
     display: block;
     margin-bottom: 5px;
     color: white;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -2188,7 +2168,6 @@ span {
     width: 100%;
     padding: 12px 16px;
     border-radius: 6px;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     border: 1px solid #ccc;
@@ -2242,7 +2221,6 @@ span {
 }
 
 .form-container .signup-link .link {
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -2264,7 +2242,6 @@ span {
     align-items: center;
     text-align: left;
     display: flex;
-    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -2272,17 +2249,15 @@ span {
 .checkbox-input input {
     cursor: pointer;
     margin-right: 10px;
-
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.hide_btn{
+.hide_btn {
     cursor: pointer;
     display: block;
-
 }
 
 
@@ -2295,11 +2270,9 @@ footer {
     -moz-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
     box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
 
-
 }
 
 .contenedor-footer {
-
     display: flex;
     align-items: center;
     justify-content: space-around;
