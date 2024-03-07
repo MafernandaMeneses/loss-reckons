@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./recursos/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./recursos/css/responsive_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Lossreckon</title>
 
@@ -17,7 +17,6 @@
         <nav class="navegador">
             <article class="logo-empresa">
                 <a href="index.html"><img src="./recursos/logos/LOGO RGB - LRS@300x.webp" alt=""></a>
-
             </article>
 
 
@@ -83,10 +82,56 @@
                 </article>
             </article>
 
+            <article class="Toggle-responsive-btn">
+                <i class="fa-solid fa-bars"></i>
+            </article>
 
+            <div class="Dropdown-responsive-menu">
+                <li><a href="">Nosotros</a></li>
+                <li><a href="#servicios-carrusel">Servicios</a></li>               
+                <li><a href="public/prueba.html">Prueba de Calidad de aire (IAQ)</a></li>
+                <li><a href="">Inspección de Moho</a></li>
+                <li><a href="">Inspección de imágenes térmicas </a></li>
+                <li><a href="">Recuento de partículas </a></li>
+                <li><a href="#cont-contactos">Contactos</a></li>
+                <article class="Dropdown-responsive-menu-bottom">
+                    <article class="login">
+                    <section class="img-login">
+                        <img src="./recursos/icons/acceso.png" alt="">
+                    </section>
+                    <a href="./registro.html">Iniciar Sesion</a>
+                    </article>
+                    <article class="contedor-banderas">
+                    <section class="lenguaje">
+                        <article class="img-lenguaje">
+                            <img src="./recursos/icons/estados-unidos.png" alt="">
+                        </article>
+                        <article class="texto-lenguaje">
+                            <p>EN</p>
+                        </article>
 
+                    </section>
+                    <section class="separador-lenguaje"></section>
+                    <section class="lenguaje">
+                        <article class="img-lenguaje">
+                            <img src="./recursos/icons/espana.png" alt="">
+                        </article>
+                        <article class="texto-lenguaje">
+                            <p>ES</p>
+                        </article>
+
+                    </section>
+
+                </article>
+                </article  >
+                
+                
+                
+            </div>
         </nav>
     </header>
+
+
     <div class="contedor-principal" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
 
         <section class="titulo-contenedor1">
@@ -112,19 +157,17 @@
     <!-- Contenedor sobre el Moho -->
     <div class="Cont-moho">
         <div class="cont-moho2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
-            <h1>
-
-                Moho en la pared: <span>¿qué es y cuáles son las causas? </span></h1>
+            <h1>Moho en la pared: <span>¿qué es y cuáles son las causas? </span></h1>
 
             <section class="Dv-moho-1">
                 <p class="P-moho2">Es causado por un hongo que se reproduce mediante esporas presentes en el aire, cuando estas esporas encuentran condiciones óptimas de humedad, temperatura y nutrientes, se establecen y crecen formando manchas.
-                </p>
+                </p>                    
+                <h2>Estas son algunas de las causas más comunes <span>para la aparición de moho en las paredes</span></h2>
             </section>
         </div>
         <section class="Sect-moho">
             <article class="Art-moho-1">
                 <article class="Dv-moho-2" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
-                    <h2>Estas son algunas de las causas más comunes <span>para la aparición de moho en las paredes</span></h2>
                     <div>
                         <p class="P-moho">La elevada humedad debido a factores climáticos, falta de ventilación adecuada o uso específico de la habitación como en cocinas, baños o polideportivos favorece el crecimiento del moho.</p>
                     </div>
@@ -160,8 +203,8 @@
 
 
         <section class="tarjetas-IAQ" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
-            <section class="card-IAQ">
-                <section class="card-imgIAQ">
+            <section class="card-IAQ" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
+                <section class="card-imgIAQ" >
                     <img src="./recursos/comercio.avif" alt="">
                 </section>
 
@@ -177,7 +220,7 @@
 
             </section>
 
-            <section class="card-IAQ">
+            <section class="card-IAQ" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
                 <section class="card-imgIAQ">
                     <img src="./recursos/oficinas.jpg" alt="">
                 </section>
@@ -193,7 +236,7 @@
 
             </section>
 
-            <section class="card-IAQ">
+            <section class="card-IAQ" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
                 <section class="card-imgIAQ">
                     <img src="./recursos/pexels-mikhail-nilov-8923072.jpg" alt="">
                 </section>
@@ -209,7 +252,7 @@
 
             </section>
 
-            <section class="card-IAQ">
+            <section class="card-IAQ" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
                 <section class="card-imgIAQ">
                     <img src="./recursos/pexels-binyamin-mellish-106399.jpg" alt="">
                 </section>
@@ -225,11 +268,11 @@
 
             </section>
 
-            <section class="card-IAQ">
+
+            <section class="card-IAQ"data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
                 <section class="card-imgIAQ">
                     <img src="./recursos/hospital.jpg" alt="">
                 </section>
-
 
                 <section class="card-texto">
                     <h4>Hospitales</h4>
@@ -241,7 +284,8 @@
 
             </section>
 
-            <section class="card-IAQ">
+
+            <section class="card-IAQ" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
                 <section class="card-imgIAQ">
                     <img src="./recursos/cultura.jpg" alt="">
                 </section>
@@ -257,7 +301,8 @@
 
             </section>
 
-            <section class="card-IAQ">
+
+            <section class="card-IAQ" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
                 <section class="card-imgIAQ">
                     <img src="./recursos/deporte.jpg" alt="">
                 </section>
@@ -273,11 +318,11 @@
 
             </section>
 
-            <section class="card-IAQ">
+
+            <section class="card-IAQ" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
                 <section class="card-imgIAQ">
                     <img src="./recursos/restaurante.jpg" alt="">
                 </section>
-
 
                 <section class="card-texto">
                     <h4>Horeca</h4>
@@ -293,7 +338,7 @@
 
         <section class="boton-IAQ" id="boton-IAQ">
             <!-- este div funciona como boton XD -->
-            <div id="show-more">Ver Mas</div>
+            <div data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50" id="show-more">Ver mas áreas de aplicación</div>
             <!-- <a data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50" href="">Ver todas las áreas de aplicación</a> -->
         </section>
 
@@ -330,7 +375,7 @@
                 <div class="Services" style="background-image: url(recursos/inspection-checklist-taking-photo-of-moldy-shower.webp);">
                     <div class="Serv-content">
                         <h1 class="Serv-name">Inspeccion de Moho</h1>
-                        <p class="Serv-desc">Una inspección de moho en una casa es un proceso que ayuda a identificar y eliminar el moho, lo que puede prevenir enfermedades, daños estructurales en la casa, y mejorar la calidad del aire. </p>
+                        <p class="Serv-desc">Una inspección de moho en una casa es un proceso que ayuda a identificar el moho, lo que puede prevenir enfermedades, daños estructurales en la casa, y mejorar la calidad del aire. </p>
                         <a class="Serv-btn" href="#">Saber mas</a>
                     </div>
                 </div>
@@ -351,13 +396,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
 
     <!-- contenedor con parallax1 -->
 
@@ -579,7 +617,7 @@
 
 
         </div>
-
+    </div>
 
         <!-- Contenedor parallax2  -->
 
@@ -649,20 +687,16 @@
 
 
 
-
-
-
-
-
         <!-- Services Slider -->
-        <section class="Sect-slider">
+        <section class="Sect-slider Sect-slider2"data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
+
             <article class="Services-tl">
                 <h1 data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">Clientes <span class="services-span">Satisfechos</span> </h1>
             </article>
 
             <div class="Slider2-cont">
 
-                <div class="Slider2" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
+                <div class="Slider2" >
 
                     <div class="Clients">
                         <div class="Client-content">
@@ -798,7 +832,7 @@
 
         </footer>
 
-        <script src="/js/app.js"></script>
+        <script src="./js/app.js"></script>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
