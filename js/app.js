@@ -41,17 +41,3 @@ ShowMoreBtn.onclick = () =>{
         ShowMoreBtn.style.display = 'none';
     }
 }
-
-
-const ToggleBtnNav = document.querySelector('.Toggle-responsive-btn')
-const ToggleBtnNavIcon = document.querySelector('.Toggle-responsive-btn i')
-const DropdownMenu = document.querySelector('.Dropdown-responsive-menu')
-
-ToggleBtnNav.onclick = function () {
-    DropdownMenu.classList.toggle('open')
-    const isOpen = DropdownMenu.classList.contains('open')
-
-    ToggleBtnNavIcon.classList = isOpen
-    ? 'fa-solid fa-xmark'
-    : 'fa-solid fa-bars'
-}
