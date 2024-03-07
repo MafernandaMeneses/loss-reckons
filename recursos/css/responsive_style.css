@@ -1,0 +1,623 @@
+@media (max-width: 699px ) {
+    :root{
+        --font-titles:5vw ;
+        --font-subtitles:4vw ;
+        --font-parraf:3.5vw;
+    }
+
+    /* contenedor Header */
+    .contedor-principal {
+        width: 100%;
+        height: auto;
+    }
+    .titulo-contenedor1{
+        width: 100%;
+        padding-right: 50%;
+        background-color: rgba(255, 255, 255, 0.432);
+        
+    }
+    .titulo-contenedor1 h1,
+    .titulo-contenedor1 h1 span{
+        font-size: var(--font-titles);
+    }
+    .contenedor1-parrafo p{
+        font-size: var(--font-parraf)
+    }
+    .boton-contenedor1{
+        width: 70%;
+        
+    }
+    .boton-contenedor1 a{
+        font-size: calc(var(--font-parraf) - 25%) ;
+    }
+    
+    .boton-contenedor1:hover a{
+        font-size: calc(var(--font-parraf) + 15%) ;
+    }
+
+    #boton1-contenedor1>a {
+        transition: all .5s ease-in-out;
+    }
+    
+    #boton1-contenedor1:hover a {       
+        font-size: calc(var(--font-parraf) + 15%) ;
+        
+    }
+    /* Nav */
+    
+    
+    .enlaces-navegador{
+        width: auto;
+    }
+    
+    .enlaces-navegador ul li a {
+        height: 100%;
+        font-size:var(--font-parraf);
+    }
+
+    .logo-empresa img {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    /* Selector de idiomas */
+    .contedor-lenguaje{
+        display: none;
+    }
+    
+    /* Contenedor Moho */
+    .cont-moho2 h1,.cont-moho2 span{
+        font-size: var(--font-titles);
+    }
+
+    .Dv-moho-1 h2,
+    .Dv-moho-1 h2 span{
+        font-size: var(--font-titles);
+    }
+    
+    .Dv-moho-1 .P-moho2,
+    .Dv-moho-2 div .P-moho
+    {
+        font-size: var(--font-parraf);
+    }
+    .Art-moho-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+        
+    }
+
+
+    /* Importancia de respirar aire limpio */
+
+    .titulo-IAQ h1,
+    .titulo-IAQ h1 span{
+        font-size: var(--font-titles);
+    }
+
+    .parrafoIAQ p{
+        font-size: var(--font-parraf);
+        line-height:calc(var(--font-parraf) + 1vw) ;
+    }
+    
+    .card-IAQ .card-imgIAQ{
+        height: 70%;
+
+    }
+
+    .card-texto h4{
+        font-size: var(--font-titles);
+    }
+
+    .card-texto p{
+        font-size: var(--font-parraf);
+        line-height: calc(var(--font-parraf) + .8vw);
+        font-weight: bold;
+    }
+
+    .boton-IAQ div{
+        font-size: var(--font-parraf);
+    }
+
+    /* Contenedor parallax 1 */
+    .contenedor3-texto {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;   
+    }
+        
+    
+    #boton-contenedor3>a {
+        transition: all .5s ease-in-out;
+    }
+    
+    #boton-contenedor3:hover a {
+        font-size:calc(var(--font-parraf) + 5%);
+    }
+
+
+    .contenedor3-imagen .contenedor3-texto h1{
+        font-size:var(--font-titles);
+    }
+    .contenedor3-texto{
+        padding: 5%;
+    }
+    .contenedor3-imagen .contenedor3-texto p{
+        font-size: var(--font-parraf);
+    }
+
+    .boton-contenedor3 a {
+        font-size: var(--font-parraf);
+    }
+
+    /* Contenedor Servicios */
+
+    .Slider .Services:nth-child(4){
+        opacity: 0;
+    }
+
+    .Services .Serv-content{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        min-width: 320px;
+        width: auto;
+        transform: translate(-50%, -60%);
+        display: none;
+        padding: 5%;
+    }
+    
+    .Serv-content .Serv-name{
+        font-size: var(--font-titles);      
+        width: 70%;
+    }
+
+    .Serv-content .Serv-desc{
+        font-size: var(--font-parraf);
+        line-height:calc(var(--font-parraf) + .5em) ;
+        font-weight: bold;
+    }
+
+    
+    .Serv-content .Serv-btn {
+        font-size: var(--font-subtitles);
+    }
+
+    /* Como funciona nuestro servicio */
+
+    .contendor-funcionamiento{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-funcionamiento{
+        width: 80%;
+        height: auto;
+    }
+
+    .titulo-funcionamiento h1,.titulo-funcionamiento span{
+        font-size: var(--font-titles);
+        font-weight: bold;
+    }
+    .subtitulo-funcionamiento h4{
+        font-size: var(--font-parraf);
+        font-weight: bold;
+    }
+    
+
+    .card-funcionamiento{
+        width: 80%;    
+        
+    }
+
+    .card-funcionamiento .contenedor-card .card{
+        width: 40%;
+    }
+    
+    .card-funcionamiento .contenedor-card .card .texto-card h3{
+        font-size: var(--font-parraf);        
+    }
+
+    .card-funcionamiento .contenedor-card .card .texto-card p{
+        font-size: var(--font-parraf);
+        line-height: calc( var(--font-parraf) + .5em);
+    }
+
+    /* Beneficios de contratar nuestros servicios */
+
+    .titulo-beneficios h1,
+    .titulo-beneficios span{
+        font-size: var(--font-titles);
+    }
+
+    .container-beneficios{
+        flex-direction: column;
+    }
+
+    .contenedor-beneficios{
+        width: 80%;
+    }
+    
+    .beneficios-tarjetas .beneficios-card h4{
+        font-size: var(--font-parraf);
+    }
+
+    .grid-beneficios{
+        width: 80%;
+    }
+
+    /* parallax 2 */
+
+    .parallax2-texto{
+        width: 45%;
+        padding: 5% 0% 5% 5%;
+    }
+
+    /* Contamos con el mejor gestor */
+    .Sect-serv-clt{
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .Sect-serv-clt img{
+        width: 100%;
+    }
+    .Art-serv-clt{
+        width: 100%;
+    }
+
+    .Art-serv-clt-tl h1, 
+    .Art-serv-clt-tl span{
+        font-size: var(--font-titles) ;
+        font-weight: bold;
+    }
+    
+    .Art-serv-clt-p{
+        font-size: var(--font-parraf);
+    }
+
+    /* Contactos */
+
+    .contenedor-contactos{
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .Contactos{
+        width: 100%;
+    }
+
+    .titulo-contactos h1,
+    .titulo-contactos span{
+        font-size: var(--font-titles);
+    }
+
+    .seccion-contactos h4,
+    .seccion-contactos a,
+    .seccion-contactos p
+    {
+        font-size: var(--font-parraf);
+
+    }
+   
+    /* Clientes satisfechos*/
+
+    .Slider2-cont{
+        width: 90%;
+    }
+
+    .Sect-slider2{
+        min-height: 700px;
+        height: auto;
+    }
+
+    .Services-tl h1,
+    .Services-tl h1 span{
+        font-size: var(--font-titles);
+        font-weight: bolder;
+    }
+
+    .Slider2{
+        grid-template-columns: repeat(1, minmax(min(100%,200px),1fr));
+    }
+
+    .Slider2 .Clients:nth-child(2) .Client-content,
+    .Slider2 .Clients:nth-child(3) .Client-content{
+        display: none;
+    }
+    
+    /* .Slider2 .Clients:nth-child(1),
+    .Slider2 .Clients:nth-child(2),
+    .Slider2 .Clients:nth-child(3),
+    .Slider2 .Clients:nth-child(4),
+    .Slider2 .Clients:nth-child(5),
+    .Slider2 .Clients:nth-child(n + 6)
+    {
+        translate:0% 100%;
+        height: 30%;
+        
+    }
+    .Slider2 .Clients:nth-child(2){
+        translate: -20% 100%;
+    }
+    .Slider2 .Clients:nth-child(3){
+        translate: -10% 100%;
+    }
+
+    .Slider2 .Clients:nth-child(1),
+    .Slider2 .Clients:nth-child(4)
+    {
+        opacity: 0;
+    } */
+    /* .Clients .Client-content .Client-pic{
+        translate: -30% -5%;
+
+    } */
+    .Clients .Client-content .Client-name{
+        font-size: var(--font-titles);
+    }
+    .Clients .Client-content .Client-desc{
+        font-size: var(--font-parraf);
+        line-height:calc(var(--font-parraf) + .5rem) ;
+        font-weight: bold;
+    }
+
+    /* Responsive de nav */
+    .enlaces-navegador,
+    .contedor-lenguaje{
+        display: none;
+    }
+    .Toggle-responsive-btn{
+        display: block;
+    }
+
+    .Dropdown-responsive-menu{
+        width: 90%;
+        display: block; 
+        z-index: 100;
+        border-radius: 0 0 45px 45px;
+        box-shadow: 0 5px 1px rgba(233, 224, 224, 0.356);
+    }
+    .Dropdown-responsive-menu li a{
+        font-size: var(--font-parraf);
+    }
+
+    .Dropdown-responsive-menu li:hover a { 
+        font-size: calc(var(--font-parraf) + 10%);
+    }
+
+    .login a{
+        font-size: var(--font-parraf);
+    }
+
+    .login a:hover{
+        font-size: calc(var(--font-parraf) + 10%) ;
+    }
+    .lenguaje p{
+        font-size: var(--font-parraf);
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+    :root{
+        --font-titles:3vw ;
+        --font-subtitles:2.5vw ;
+        --font-parraf:2vw;
+    }
+
+    .contedor-principal {
+        width: 100%;
+        height: 40vh;
+    }
+    /* Importancia de IAQ */
+
+    .tarjetas-IAQ {
+        /* border: 1px solid rgb(128, 0, 85); */
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min(100%, 300px), 1fr));
+        gap: 2em;
+    }
+
+    .titulo-IAQ h1,
+    .titulo-IAQ h1 span{
+        font-size: var(--font-titles);
+    }
+
+    .parrafoIAQ p{
+        font-size: var(--font-parraf);
+        line-height:calc(var(--font-parraf) + 1vw) ;
+    }
+    
+    .card-IAQ .card-imgIAQ{
+        height: 70%;
+
+    }
+
+    .card-texto h4{
+        font-size: var(--font-titles);
+    }
+
+    .card-texto p{
+        font-size: var(--font-parraf);
+        line-height: calc(var(--font-parraf) + .8vw);
+        font-weight: bold;
+    }
+
+    .boton-IAQ div{
+        font-size: var(--font-parraf);
+    }
+
+    /* Servicios */
+
+    .Services .Serv-content{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        min-width: 300px;
+        width: auto;
+        transform: translate(-65%, -40%);
+        display: none;
+        padding: 5%;
+    }
+    
+    .Serv-content .Serv-name{
+        font-size: var(--font-titles);      
+        width: 70%;
+    }
+
+    .Serv-content .Serv-desc{
+        font-size: var(--font-parraf);
+        line-height:calc(var(--font-parraf) + .5em) ;
+        font-weight: bold;
+    }
+
+    
+    .Serv-content .Serv-btn {
+        font-size: var(--font-subtitles);
+    }
+
+    /* Como funciona nuestro servicio */
+
+    .contendor-funcionamiento{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-funcionamiento{
+        width: 80%;
+        height: auto;
+    }    
+
+    .card-funcionamiento{
+        width: 80%;        
+    }
+
+    .card-funcionamiento .contenedor-card .card{
+        width: 27%;
+    }
+    
+    .card-funcionamiento .contenedor-card .card .texto-card h3{
+        font-size: var(--font-parraf);        
+    }
+
+    .card-funcionamiento .contenedor-card .card .texto-card p{
+        font-size: var(--font-parraf);
+        line-height: calc( var(--font-parraf) + .5em);
+    }
+
+    /* Beneficios */
+
+    .titulo-beneficios h1,
+    .titulo-beneficios span{
+        font-size: var(--font-titles);
+    }
+
+    .container-beneficios{
+        flex-direction: column;
+    }
+
+    .contenedor-beneficios{
+        width: 80%;
+    }
+    
+    .beneficios-tarjetas .beneficios-card h4{
+        font-size: var(--font-parraf);
+    }
+
+    .grid-beneficios{
+        width: 80%;
+    }
+
+
+    /* Contenedor de clientes */
+
+    .Slider2-cont{
+        width: 90%;
+    }
+
+    .Sect-slider2{
+        min-height: 800px;
+        height: auto;
+    }
+
+    .Slider2{
+        grid-template-columns: repeat(2, minmax(min(100%,250px),1fr));
+    }
+    
+    .Slider2 .Clients:nth-child(3) .Client-content{
+        display: none;
+    }
+    
+    .Clients .Client-content .Client-name{
+        font-size: var(--font-titles);
+    }
+    .Clients .Client-content .Client-desc{
+        font-size: var(--font-parraf);
+        line-height:calc(var(--font-parraf) + .5rem) ;
+        font-weight: bold;
+    }
+
+        /* Contactos */
+
+        .contenedor-contactos{
+            height: auto;
+            padding: 5% 0;
+        }
+    
+        .Contactos{
+            width: calc(60% + 50px);
+        }
+    
+        .titulo-contactos h1,
+        .titulo-contactos span{
+            font-size: var(--font-titles);
+        }
+    
+        .seccion-contactos h4,
+        .seccion-contactos a,
+        .seccion-contactos p
+        {
+            font-size: var(--font-parraf);
+    
+        }
+
+    /* boton del menu desplegable */
+    .enlaces-navegador,
+    .contedor-lenguaje{
+        display: none;
+    }
+    .Toggle-responsive-btn{
+        display: block;
+    }
+
+    .Dropdown-responsive-menu{
+        display: block;
+    }
+}
+
+@media (min-width: 1000px ) and (max-width: 1200px){
+    .Slider2-cont{
+        width: 90%;
+    }
+
+    .Sect-slider2{
+        min-height: 700px;
+        height: auto;
+    }
+
+    .Slider2{
+        grid-template-columns: repeat(2, minmax(min(100%,300px),1fr));
+    }
+    .Slider2 .Clients:nth-child(3) .Client-content{
+        display: none;
+    }
+}
+
+
+
