@@ -31,6 +31,7 @@
     --color-titulo: #0010b3;
     --color-sub-titulo: #0cbccc;
     --color-oscuro: #063254;
+    
 }
 
 body {
@@ -341,7 +342,19 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    animation: myAnim 2s ease 0s 1 normal forwards;
   }
+  @keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
   
   .container-form {
     width: 90%;
@@ -427,17 +440,40 @@ p{
     display: flex;
     justify-content: space-around;
     margin: auto;
-    
+ 
+  }
+
+  .iconos {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes iconos {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes iconos {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
   }
   
- 
-   
+  
   .iconos i{
  color: white;
  
   }
 
-  
   .border-icon {
     height: 20px;
     width: 20px;
@@ -569,21 +605,34 @@ p{
     visibility: hidden;
   }
 
-  @media (max-width:720px){
+  @media screen and (max-width:750px){
+
+    .container-form sign-in{
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+       
+    }
     .container-form {
-      width: 90%;
+      width: 100%;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      margin-top: 20em;
+      justify-content: center;
+      align-items: center;
+   
+    
 
       
     }
     .formulario{
         width: 100%;
-        justify-content: center;
-        align-self: center;
-        justify-self: center;
-        margin: 20px;
+       height: 40em;
+       padding: 2%;
+        
        
     
 
@@ -603,9 +652,13 @@ p{
         width: 100%;
         height: auto;
     }
+    input label button{
+        width: 50%;
+        font-size: 15px;
+    }
     .message{
         width: 90%;
-        height: 400px;
+        height: 50vh;
         
     }
     .iconos{
@@ -649,14 +702,16 @@ p{
         font-size: 20px;
     }
     .welcome-back{
-        width: 100%;
-     height: 50px;
-     margin-top: 50px;
-     
+        margin-top: 70vh; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
     }
 
+    }
  
-}
+
 .recuperacion{
     width: 100%;
     height: 90vh;
@@ -664,6 +719,7 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: myAnim 2s ease 0s 1 normal forwards;
    
 }
 
@@ -2573,6 +2629,7 @@ span {
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
+        margin-top: 50vh;
        
     }
   }
