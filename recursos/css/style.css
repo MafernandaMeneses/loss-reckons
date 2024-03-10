@@ -161,9 +161,12 @@ body {
 
 .enlaces-navegador ul {
     list-style: none;
-    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    z-index: 10000;
 }
 
 .enlaces-navegador ul li {
@@ -186,24 +189,27 @@ body {
 
 .enlaces-navegador ul li .dropdown li {
     display: block;
+    height: 100%;
+    position: relative;
 }
 
 .enlaces-navegador ul li ul.dropdown {
     width: 250%;
     background-color: #ffffff;
     position: absolute;
-    z-index: 999;
+    z-index: 9999999;
     display: none;
     margin-top: 5px;
 }
 
-.enlaces-navegador ul li a:hover {
+.enlaces-navegador ul li:hover a {
     color: #0cbccc;
     font-weight: 600;
     font-style: normal;
+    z-index: 10000000000000000000;
 }
 
-.enlaces-navegador ul li .dropdown li a:hover {
+.enlaces-navegador ul li .dropdown li:hover a {
     background-color: rgba(0, 0, 0, 0.199);
 }
 
@@ -2263,73 +2269,103 @@ span {
 
 /* Footer */
 
-footer {
+.pie-pagina{
     width: 100%;
-    background-color: rgb(117, 117, 117);
-    -webkit-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
-    box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
-
-}
-
-.contenedor-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2%;
-    padding: 3% 0;
-}
-
-.enlaces-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.enlaces-footer a {
+    background-color: #0a141d;
+  }
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+    
+  }
+  .box_enlaces a{
+    width: 100%;
+    display: block;
     text-decoration: none;
-    font-size: 1.4vw;
-    color: var(--bg-titulos);
-    font-weight: 400;
-}
-
-.enlaces-footer a:hover {
-    color: var(--color-sub-titulo);
-}
-
-.redes-footer {
+    color: #ffff;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    padding: 10px 0px;   
+    
+  
+  }
+  
+  .box_enlaces a:hover{
+    color: #0cbccc;
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+  }
+  
+  .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 45%;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.instragram-footer {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
-}
-
-.instragram-footer img {
-    width: 1.5em;
-}
-
-.instragram-footer a {
+   
+  }
+  .pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+   
+    
+  }
+  .pie-pagina .grupo-1 .box h2{
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+   
+  }
+  .box_titulo{
+    margin-top: 45px;
+  }
+  .pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+  }
+  .red-social{
+    margin-top: 20px;
+  }
+  .pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
     text-decoration: none;
-    font-size: 1.4vw;
-    color: var(--bg-titulos);
-    font-weight: 400;
-}
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+  }
+  .pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .pie-pagina .grupo-2 small{
+    font-size: 15px;
+  }
+  @media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+        margin-top: 50vh;
+       
+    }
+  }
 
-.instragram-footer a:hover {
-    color: var(--color-sub-titulo);
-}
-
-.copyright {
-    display: flex;
-}
-
-.copyright span {
-    font-size: 1.2vw;
-    font-weight: 400;
-}
+  /* fin de footer */
