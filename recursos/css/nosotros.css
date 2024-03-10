@@ -1,0 +1,212 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+:root {
+    --bg-titulos: #042469;
+    --color-titulo: #0010b3;
+    --color-sub-titulo: #0cbccc;
+    --color-oscuro: #063254;
+}
+
+.img-contenedornosotros {
+    width: 100%;
+    height: 55vh;
+    background-image: url(../home-inspector-with-clipboard-house-in-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros-color {
+    width: 100%;
+    height: 55vh;
+    z-index: 1;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 1.5px);
+    -webkit-backdrop-filter: blur( 1.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texto-contenedor-nosotros img {
+    width: 100%;
+}
+
+.separador-cont-nosotros {
+    width: 30%;
+    height: 0.1em;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.nosotros-color h1 {
+    font-size: 3.4vw;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--bg-titulos);
+}
+
+.contenedor2-nosotros {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    gap: 3%;
+    padding: 2% 2%;
+    margin-top: 5%;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.grid-cont2-nosotros {
+    width: 45%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid1-cont2 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url(../logos/ISOTIPO\ -\ LOGO\ .webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.grid2-cont2 {
+    grid-column: 2/3;
+    grid-row: 1;
+    background-image: url(../image-11.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 45px 25px 45px 5px;
+}
+
+.grid3-cont2 {
+    grid-column: 2/3;
+    grid-row: 2;
+    background-image: url(../Captura\ de\ pantalla\ 2024-02-25\ 203623.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 45px 25px 45px 5px;
+}
+
+.texto-cont2-nosotros {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-cont-mision {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+
+.texto-cont2-nosotros h1 {
+    font-size: 3.5vw;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: var(--bg-titulos);
+    text-align: center;
+}
+
+.texto-cont2-nosotros p {
+    font-size: 1.7vw;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    text-align: justify;
+    color: gray;
+}
+
+.parallax-cont-nosotros {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../inspeccion-de-moho.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 5%;
+    -webkit-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.img-parallax-nosotros {
+    width: 60%;
+    border-radius: 100px 0px 0px 100px;
+    -moz-border-radius: 100px 0px 0px 100px;
+    -webkit-border-radius: 100px 0px 0px 100px;
+    border: 0px solid #000000;
+}
+
+.objetivos-cont-nosotros {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    padding: 2% 2%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.texto-objetivos-nosotros {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.titulo-cont-objetivos {
+    width: 60%;
+}
+
+.titulo-cont-objetivos h1 {
+    font-size: 3.5vw;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: var(--bg-titulos);
+    text-align: center;
+}
+
+.P-cont-objetivos {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.P-cont-objetivos p {
+    font-size: 1.7vw;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    text-align: justify;
+    color: gray;
+}
+
+.img-obj-nosotros {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-obj-nosotros img {
+    width: 100%;
+    height: 90%;
+    border-radius: 45px 25px 45px 5px;
+}
