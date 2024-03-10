@@ -38,7 +38,6 @@ body {
 
 .navegador {
     width: 100%;
-    height: 5.5em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -47,11 +46,11 @@ body {
     backdrop-filter: blur( 6.5px);
     -webkit-backdrop-filter: blur( 6.5px);
     margin: 0 auto;
-    padding: 3% 0;
 }
 
 .enlaces-navegador {
     width: 35%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +66,7 @@ body {
 
 .logo-empresa img {
     width: 14em;
+    padding: 4% 0%;
 }
 
 .login {
@@ -166,7 +166,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    z-index: 10000;
 }
 
 .enlaces-navegador ul li {
@@ -187,37 +186,43 @@ body {
     font-style: normal;
 }
 
-.enlaces-navegador ul li .dropdown li {
-    display: block;
-    height: 100%;
-    position: relative;
+.enlaces-navegador ul li ul.dropdown{
+    width: 250%;
+    height: 0px;
+    background-color: #ffffff;    
+    display: none;
+    margin-top: 5px;    
 }
 
-.enlaces-navegador ul li ul.dropdown {
-    width: 250%;
-    background-color: #ffffff;
-    position: absolute;
-    z-index: 9999999;
-    display: none;
-    margin-top: 5px;
+.enlaces-navegador ul li ul.dropdown li {
+    display: block;
+    height: 100%;
 }
 
 .enlaces-navegador ul li:hover a {
     color: #0cbccc;
     font-weight: 600;
     font-style: normal;
-    z-index: 10000000000000000000;
+    
 }
 
 .enlaces-navegador ul li .dropdown li:hover a {
     background-color: rgba(0, 0, 0, 0.199);
+    
 }
 
 .enlaces-navegador ul li:hover ul.dropdown {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    z-index: 11111111111;     
+    height: auto;
+    translate: 0% 20%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* Dropdown menu */
+/* Dropdown menu toggle */
 .Toggle-responsive-btn{
     display: none;
 }

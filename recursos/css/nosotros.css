@@ -13,6 +13,8 @@
 .img-contenedornosotros {
     width: 100%;
     height: 55vh;
+    position: relative;
+    z-index: -1;
     background-image: url(../home-inspector-with-clipboard-house-in-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -22,11 +24,12 @@
 .nosotros-color {
     width: 100%;
     height: 55vh;
+    position: relative;
     z-index: 1;
     background: rgba( 255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-    backdrop-filter: blur( 1.5px);
-    -webkit-backdrop-filter: blur( 1.5px);
+    backdrop-filter: blur( 2px);
+    -webkit-backdrop-filter: blur( 2px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,6 +60,7 @@
     width: 100%;
     height: 75vh;
     display: flex;
+    overflow-x: hidden;
     gap: 3%;
     padding: 2% 2%;
     margin-top: 5%;
