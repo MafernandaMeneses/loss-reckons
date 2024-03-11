@@ -1,3 +1,17 @@
+const ToggleBtnNav = document.querySelector('.Toggle-responsive-btn')
+const ToggleBtnNavIcon = document.querySelector('.Toggle-responsive-btn i')
+const DropdownMenu = document.querySelector('.Dropdown-responsive-menu')
+
+ToggleBtnNav.onclick = function () {
+    DropdownMenu.classList.toggle('open')
+    const isOpen = DropdownMenu.classList.contains('open')
+
+    ToggleBtnNavIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+}
+
+
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
 
@@ -43,15 +57,3 @@ ShowMoreBtn.onclick = () =>{
 }
 
 
-const ToggleBtnNav = document.querySelector('.Toggle-responsive-btn')
-const ToggleBtnNavIcon = document.querySelector('.Toggle-responsive-btn i')
-const DropdownMenu = document.querySelector('.Dropdown-responsive-menu')
-
-ToggleBtnNav.onclick = function () {
-    DropdownMenu.classList.toggle('open')
-    const isOpen = DropdownMenu.classList.contains('open')
-
-    ToggleBtnNavIcon.classList = isOpen
-    ? 'fa-solid fa-xmark'
-    : 'fa-solid fa-bars'
-}
