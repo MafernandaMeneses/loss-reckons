@@ -215,51 +215,43 @@
     border-radius: 45px 25px 45px 5px;
 }
 
-
-@media (max-width: 699px ) {
-
-    .contenedor2-nosotros{
+@media (max-width: 699px) {
+    .contenedor2-nosotros {
         flex-direction: column;
         align-items: center;
     }
-    .grid-cont2-nosotros{
+    .grid-cont2-nosotros {
         width: 80%;
     }
-    .texto-cont2-nosotros{
+    .texto-cont2-nosotros {
         width: 80%;
     }
-
-    .objetivos-cont-nosotros{
-        height:auto ;
+    .objetivos-cont-nosotros {
+        height: auto;
     }
-
     .texto-cont-mision p,
-    .P-cont-objetivos p{
+    .P-cont-objetivos p {
         font-size: 2vw;
         font-weight: bold;
     }
-
     .titulo-cont-nosotros h1,
-    .titulo-cont-objetivos h1
-    {
+    .titulo-cont-objetivos h1 {
         font-size: 4vw;
         font-weight: bolder;
     }
-    .titulo-cont-objetivos{
+    .titulo-cont-objetivos {
         width: auto;
-        padding-bottom:1% ;
+        padding-bottom: 1%;
     }
-    .texto-objetivos-nosotros{
+    .texto-objetivos-nosotros {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-
-    .P-cont-objetivos{
+    .P-cont-objetivos {
         width: 80%;
     }
-    
-    .img-obj-nosotros{
+    .img-obj-nosotros {
         width: 80%;
     }
 }

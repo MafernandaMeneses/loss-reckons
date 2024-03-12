@@ -1,0 +1,148 @@
+.contedor-reconteo {
+    width: 100%;
+    height: 55vh;
+    background-image: url(../contador-de-particulas-pc220-2ba6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo-reconteo-particular {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.titulo-reconteo-particular h1 {
+    font-size: 3.5vw;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: var(--bg-titulos);
+    text-align: center;
+}
+
+.titulo-reconteo-particular span {
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-sub-titulo);
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3.7vw;
+    letter-spacing: 1px;
+}
+
+.cont-inf-particulas {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    padding: 2% 2%;
+    margin-top: 2%;
+}
+
+.texto-reconteo-particular {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.texto-reconteo-particular p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    text-align: justify;
+    color: gray;
+}
+
+.cont-img-particulas {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-img-particulas img {
+    width: 80%;
+    height: 60%;
+    border-radius: 45px 25px 45px 5px;
+}
+
+.contedor-inf-particulas2 {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    padding: 2% 2%;
+    gap: 4%;
+    overflow-x: hidden;
+}
+
+.texto-reconteo-particular2 {
+    width: 60%;
+}
+
+.texto-reconteo-particular2 p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    color: gray;
+}
+
+.cont-img-particulas2 {
+    width: 35%;
+    height: auto;
+    background-image: url(../reconteo-particulas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px 25px 45px 5px;
+}
+
+.contedor-inf-particulas3 {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    padding: 2% 2%;
+    gap: 4%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    overflow-x: hidden;
+}
+
+.texto-reconteo-particular3 {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.texto-reconteo-particular3 p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    color: gray;
+}
+
+.cont-img-particulas3 {
+    width: 35%;
+    height: auto;
+    background-image: url(../contador_de_particulas--2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px 25px 45px 5px;
+}
+
+.contedor-particulas-parallax {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../AK_Contadores-de-particulas_wp-1140x445.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: optimizeQuality;
+    background-attachment: fixed;
+    margin-top: 6%;
+}
