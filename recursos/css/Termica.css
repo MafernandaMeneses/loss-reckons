@@ -1,5 +1,6 @@
 /* Menu Subpagina */
 
+
 /* .container-Main {
     height: 500px;
     width: 50%;
@@ -50,14 +51,23 @@
     font-weight: bold;
 } */
 
+
 /* Panel principal */
 
+:root {
+    --bg-titulos: #042469;
+    --color-titulo: #0010b3;
+    --color-sub-titulo: #0cbccc;
+    --color-oscuro: #063254;
+    --fuente-titulos: "Montserrat", sans-serif;
+}
+
 .Panel {
-    background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../imagenes\ termicas\ 1.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes\ termicas\ 1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,48 +85,69 @@
     font-weight: inherit;
 }
 
-.Panel_Texto h1{
-    font-size: 65px;
-    font-weight: 500;
+.Panel_Texto h1 {
+    font-size: 3.5vw;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .Texto_Temografia {
-    padding-bottom:  30px;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
     display: flex;
+    align-items: center;
+    gap: 2%;
+    padding: 2% 2%;
+    margin-top: 3%;
 }
 
-.Texto_Temografia p{
-    max-width: 800px;
-    margin: 37px;
-    font-size: 29px;
-    color: #042469;
-    font-weight: bold;
-    line-height: 35px;
-    margin-inline-start: 150px;
+.P-termografia {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.Imagen_texto{
-    width: 700px;
+.P-termografia p {
+    width: 100%;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    text-align: justify;
+    color: gray;
+    padding-left: 4%;
+}
+
+.Imagen_texto {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all .3 ease;
+    border-radius: 60px 60px;
+}
+
+
+/* 
+.Imagen_texto {
+    width: 80%;
     height: auto;
     padding-bottom: 21px;
     margin: 5%;
-    border-radius: 60px 60px;
-    position: relative;
-    transition: all .3 ease;
-}
+} */
 
-.Imagen_texto img:first-child{
+.Imagen_texto img:first-child {
     box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
     border-radius: 4px;
     object-fit: cover;
-    width: 100%;
+    width: 80%;
 }
 
-.Imagen_texto img:last-child{
+.Imagen_texto img:last-child {
     position: absolute;
-    width: 700px;
+    width: 80%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -126,44 +157,44 @@
     opacity: 0;
 }
 
+
 /* .Imagen_texto:hover {
     /* transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0); */
 
 
-.Imagen_texto::before{
+/* .Imagen_texto::before {
     content: '';
     position: absolute;
     bottom: 0;
     height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0) 95%);
+    width: 80%;
+    background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%);
     opacity: 0;
     transition: all .3s ease;
 }
 
-.Imagen_texto:hover::before{
+.Imagen_texto:hover::before {
     opacity: 1;
 }
 
-.Imagen_texto:hover img:last-child{
+.Imagen_texto:hover img:last-child {
     opacity: 1;
-    transform: translateY(0.1em);
-}
+    /* transform: translateY(0.1em);
+}  */
 
 
 /* NOSOTROS */
 
-.PorqueElegirnos{
-    
+.PorqueElegirnos {
     padding: 59px;
     justify-content: center;
     text-align: center;
     margin-top: 1%;
     margin-bottom: 4%;
+    overflow-x: hidden;
 }
 
-.PorqueElegirnos h2{
+.PorqueElegirnos h2 {
     color: #042469;
     margin-bottom: 250px;
     font-family: "Lato", sans-serif;
@@ -171,14 +202,13 @@
     margin-bottom: 8%;
 }
 
-.icons{
+.icons {
     display: flex;
     color: #042469;
     font-size: 30px;
-    
 }
 
-.icons img{
+.icons img {
     width: 150px;
     justify-content: center;
     align-items: center;
@@ -192,14 +222,14 @@
     line-height: 35px;
     margin-inline-start: 3%;
     margin-right: 50px;
-
 }
 
-.colorspan{
+.colorspan {
     font-size: 50px;
     color: #0cbccc;
     font-weight: bold;
 }
+
 
 /* Footer */
 
@@ -209,12 +239,9 @@ footer {
     -webkit-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
     box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.19);
-
-
 }
 
 .contenedor-footer {
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -275,5 +302,3 @@ footer {
     font-size: 1.2vw;
     font-weight: 400;
 }
-
-    
